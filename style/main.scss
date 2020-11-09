@@ -1,0 +1,29 @@
+---
+---
+
+// Main Stylesheet
+
+// Colors
+$primary-color          : {{site.data.settings.theme_settings.primary_color}};
+$secondary-color        : {{site.data.settings.theme_settings.secondary_color}};
+$accent-color           : {{site.data.settings.theme_settings.accent_color}};
+$shade-color            : {{site.data.settings.theme_settings.shade_color}};
+$complementary-color    : {{site.data.settings.theme_settings.complementary_color}};
+
+// Fonts
+$body-font        : {{ site.data.settings.theme_settings.body_font_family }};
+$heading-font     : {{ site.data.settings.theme_settings.heading_font_family }};
+$body-font-size   : {{ site.data.settings.theme_settings.body_font_size_number }};
+$base-line-height : {{ site.data.settings.theme_settings.line_height_number }};
+
+
+@import
+  "_resets",
+  "_utility",
+  "_universal",
+  "_mixins",
+  "_buttons",
+  "_nav",
+  "_footer",
+  "_header",
+  "_media-queries";

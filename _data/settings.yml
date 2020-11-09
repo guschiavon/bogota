@@ -1,0 +1,54 @@
+general:
+  site_url:
+  address:
+  email:
+  phone:
+  facebook_url: 'https://facebook.com'
+  instagram_url: 'https://instagram.com/'
+  instagram_handle: ''
+  twitter_url: 'https://twitter.com'
+  twitter_handle: '@yourhandle'
+  youtube_url: 'https://youtube.com'
+  github_url: 'https://github.com'
+  linkedin_url: 'https://linkedin.com/'
+  snapchat_url: 'https://snapchat.com'
+  stackoverflow_url: 'https://stackoverflow.com'
+branding:
+  site_title: Jekyll CloudCannon Boilerplate
+  nav_logo_image: /assets/images/logo.png
+  footer_logo_image:
+  preview_image:
+theme_settings:
+  primary_color: '#f2f2f2'
+  secondary_color: '#000000'
+  accent_color: '#415a3d'
+  shade_color: '#789572'
+  complementary_color: '#2f2f2f'
+  font_family_embed_code_block:
+  body_font_family: 'DINPro, sans-serif'
+  heading_font_family: 'DINPro, sans-serif'
+  body_font_size_number: 1.1rem
+  line_height_number: 1.8
+navigation:
+  menus:
+    - name: About
+      url: /about
+      is_dropdown: false
+      submenus:
+        - name:
+          url:
+    - name: Dropdown
+      url: '#'
+      is_dropdown: true
+      submenus:
+        - name: Item 1
+          url: /
+        - name: Item 2
+          url: /
+        - name: Item 3
+          url: /
+seo:
+  site_description_text:
+  keywords:
+configuration:
+  flexbox_framework_code_block: '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">'

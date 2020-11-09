@@ -1,0 +1,7 @@
+cloudcannon:
+  data: true
+
+sass:
+  sass_dir: _sass
+
+uploads_dir: "assets/images"
