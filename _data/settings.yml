@@ -13,6 +13,7 @@ general:
   linkedin_url: 'https://linkedin.com/'
   snapchat_url: 'https://snapchat.com'
   stackoverflow_url: 'https://stackoverflow.com'
+  vimeo_url: 'https://vimeo.com'
 branding:
   site_title: Bogotá
   nav_logo_image: /assets/graphics/logo-main-fill.svg
@@ -25,8 +26,8 @@ theme_settings:
   shade_color: '#789572'
   complementary_color: '#2f2f2f'
   font_family_embed_code_block: '<link rel="stylesheet" href="https://use.typekit.net/otf1rmb.css">'
-  body_font_family: 'DINPro, sans-serif'
-  heading_font_family: 'DINPro, sans-serif'
+  body_font_family: '"Sofia Pro", sans-serif'
+  heading_font_family: '"Sofia Pro", sans-serif'
   body_font_size_number: 1.1rem
   line_height_number: 1.8
 navigation:

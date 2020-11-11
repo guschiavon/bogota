@@ -36,12 +36,35 @@
 </head>
     <body>
       
-      <div class="intro">
-  <h1>Video Test</h1>
-  <video src="/assets/teste.mp4"></video>
-</div>
-
-
+      <header id="header" class="header padding-x-lg padding-y-md">
+  <div class="logo-container mb-1">
+    <img src="/assets/graphics/logo-main-fill.svg" alt="bogotá agência video motion graphics">
+  </div>
+  <hr class="blue-divider">
+  <div class="atf-content editable">
+    <h2>
+      ¡Hola!
+    </h2>
+    <small><h2>Somos a</h2></small>
+    <h2>
+      <span>Bogotá.</span>
+    </h2>
+  </div>
+</header>
+<section class="shaka-container padding-x-lg">
+  <div class="shaka">
+    <video src="/assets/teste.mp4"></video>
+  </div>
+</section>
+<section id="scramble" class="scramble padding-x-lg padding-y-md">
+  <p>
+    Um <span id="line-1" class="word-scramble" onmouseover="setStringOne()" onmouseout="defaultTextOne(lineOneDefault)" >estúdio</span>
+  </p>
+  <p>especializado em <span id="line-2" class="word-scramble" onmouseover="setStringTwo()" onmouseout="defaultTextTwo(lineTwoDefault)">imagens em movimento</span></p>
+  <p>situados <span id="line-3" class="word-scramble" onmouseover="setStringThree()" onmouseout="defaultTextThree(lineThreeDefault)">no meio de tudo e mais um pouco</span></p>
+  <p>misturando <span id="line-4" class="word-scramble">linguagens</span> e explorando <span>caminhos</span></p>
+  <p>e entregando <span id="line-5" class="word-scramble">no prazo.</span></p>
+</section>
 
       
       <!-- All of your non-critical scripts can go here -->

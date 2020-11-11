@@ -28,12 +28,31 @@ $base-line-height : {{ site.data.settings.theme_settings.line_height_number }};
   "_header",
   "_media-queries";
 
-.intro {
-  height: 100vh;
+.shaka-container {
+  // position: relative;
+  text-align: right;
+  transform: translateY(-50%);
+
+}
+.shaka {
+  height: 500px;
+  left: 0 !important;
+  position: relative !important;
 }
 
 .intro video {
-  height: 100%;
-  width:100%;
-  object-fit: cover;
+  height  : 100%;
+  width   : 100%;
+  object-fit: contain;
+}
+
+.scramble {
+  margin-top: -200px;
+  p {
+    font-weight: 200;
+  }
+  span {
+    color: $accent-color;
+    font-weight: 700;
+  }
 }

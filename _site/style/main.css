@@ -6,6 +6,8 @@
 
 .flex-end { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -moz-box-orient: horizontal; -moz-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -moz-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -webkit-justify-content: flex-end; -moz-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 
+.mb-1 { margin-bottom: 1rem; }
+
 .mb-2 { margin-bottom: 2rem; }
 
 .mb-3 { margin-bottom: 3rem; }
@@ -40,13 +42,27 @@
 
 .impact-heading::before { content: ''; position: absolute; bottom: 2px; width: 2.2rem; height: 5px; background: #132410; left: 5px; }
 
-.text-dark { color: #ffcbcb; }
+.text-dark { color: #d74600; }
+
+.text-light { color: #ffcbcb; }
+
+.font-light { font-weight: 200; }
+
+.font-bold { font-weight: 900; }
 
 .responsive-img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; -o-object-position: center; object-position: center; }
 
-body { font-family: '"Sofia Pro", sans-serif'; background-color: whitesmoke; }
+.skewed { shape-outside: polygon(0 0, 60% 0, 100% 100%, 0 100%); shape-margin: 20px; clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%); border: 2px solid; }
+
+body { background-color: #ffd1d3; }
 
 a { text-decoration: none; }
+
+h1, h2, h3, h4, h5 { font-family: "Sofia Pro", sans-serif; }
+
+p, a, span, ol, ul, li, button, input, label, textarea, div, small, blockquote, cite { font-family: "Sofia Pro", sans-serif; }
+
+p { font-size: 4rem; color: #d74600; }
 
 .sticky-nav-bar { position: sticky; padding: 1rem unset; }
 
@@ -56,9 +72,9 @@ a { text-decoration: none; }
 
 .sticky-nav-bar .nav-branding .nav-logo:hover svg { fill: white; }
 
-.sticky-nav-bar .nav-branding .nav-title { text-transform: uppercase; color: #ffcbcb; font-family: DINPro, sans-serif; font-weight: bold; font-size: 1rem; }
+.sticky-nav-bar .nav-branding .nav-title { text-transform: uppercase; color: #ffcbcb; font-family: "Sofia Pro", sans-serif; font-weight: bold; font-size: 1rem; }
 
-.sticky-nav-bar .nav-container .nav-link { font-size: 1rem; letter-spacing: 2px; text-transform: uppercase; padding: 0 0.3rem; margin: 0 0.5rem; color: #d74600; font-family: DINPro, sans-serif; }
+.sticky-nav-bar .nav-container .nav-link { font-size: 1rem; letter-spacing: 2px; text-transform: uppercase; padding: 0 0.3rem; margin: 0 0.5rem; color: #d74600; font-family: "Sofia Pro", sans-serif; }
 
 .sticky-nav-bar .nav-container .nav-link:hover { color: #789572; }
 
@@ -88,8 +104,30 @@ a { text-decoration: none; }
 
 #pages-header .nav-social-link svg { fill: #6555ff; }
 
-.intro { height: 100vh; }
+.header { position: relative; height: 900px; }
 
-.intro video { height: 100%; width: 100%; object-fit: cover; }
+.logo-container img { width: 180px; }
+
+.blue-divider { height: 3px; background-color: #6555ff; border: none; }
+
+.header .atf-content { position: absolute; top: 50%; width: 60%; transform: translateY(-50%); }
+
+.header .atf-content h2 { color: #d74600; font-size: 12rem; line-height: 1; }
+
+.header .atf-content h2 span { text-transform: uppercase; font-weight: 900; }
+
+.header .atf-content small h2 { font-weight: 200; font-size: 8rem; text-indent: 3rem; }
+
+.shaka-container { text-align: right; transform: translateY(-50%); }
+
+.shaka { height: 500px; left: 0 !important; position: relative !important; }
+
+.intro video { height: 100%; width: 100%; object-fit: contain; }
+
+.scramble { margin-top: -200px; }
+
+.scramble p { font-weight: 200; }
+
+.scramble span { color: #6555ff; font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */

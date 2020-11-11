@@ -1,0 +1,33 @@
+.header {
+  position: relative;
+  height: 900px;
+}
+.logo-container img {
+  width: 180px;
+}
+.blue-divider {
+  height: 3px;
+  background-color: $accent-color;
+  border: none;
+}
+.header .atf-content {
+  position: absolute;
+  top: 50%;
+  width: 60%;
+  transform: translateY(-50%);
+  h2 {
+    color: $primary-color;
+    font-size: 12rem;
+    line-height: 1;
+    
+    span {
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+  }
+  small h2 {
+    font-weight: 200;
+    font-size: 8rem;
+    text-indent: 3rem;
+  }
+}

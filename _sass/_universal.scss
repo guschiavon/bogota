@@ -1,8 +1,37 @@
 body {
-  font-family: '"Sofia Pro", sans-serif';
-  background-color: whitesmoke;
+  background-color: #ffd1d3;
 }
 
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $heading-font;
+}
+
+p,
+a,
+span,
+ol,
+ul,
+li,
+button,
+input,
+label,
+textarea,
+div,
+small,
+blockquote,
+cite {
+  font-family: $heading-font;
+}
+
+p {
+  font-size: 4rem;
+  color: $primary-color;
 }

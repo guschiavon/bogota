@@ -54,7 +54,9 @@
 }
 
 // Padding & margins
-
+.mb-1 {
+  margin-bottom: 1rem;
+}
 .mb-2 {
   margin-bottom: 2rem;
 }
@@ -142,7 +144,16 @@
 }
 
 .text-dark {
-  color: $secondary-color;
+  color: $primary-color;
+}
+.text-light {
+  color: $secondary-color
+}
+.font-light {
+  font-weight: 200;
+}
+.font-bold {
+  font-weight: 900;
 }
 
 // Images & containers
@@ -154,4 +165,10 @@
      object-fit        : cover;
   -o-object-position   : center;
      object-position   : center;
+}
+.skewed {
+  shape-outside: polygon(0 0, 60% 0, 100% 100%, 0 100%);
+   shape-margin: 20px;
+  clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%);
+  border: 2px solid;
 }
