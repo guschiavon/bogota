@@ -27,3 +27,13 @@ $base-line-height : {{ site.data.settings.theme_settings.line_height_number }};
   "_footer",
   "_header",
   "_media-queries";
+
+.intro {
+  height: 100vh;
+}
+
+.intro video {
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}

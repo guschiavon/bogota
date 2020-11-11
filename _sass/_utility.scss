@@ -1,0 +1,157 @@
+@mixin flex-display {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+          flex-direction: row;
+}
+// Flexbox centering
+.flex-center {
+  @include flex-display;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.flex-start {
+  @include flex-display;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.flex-end {
+  @include flex-display;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-box-pack: end;
+  -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+// Padding & margins
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.padding-x-sm {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.padding-x-md {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.padding-x-lg {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.padding-y-sm {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.padding-y-md {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+.padding-y-lg {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+// Background Classes
+.bg-light {
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+.bg-dark {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+.bg-accent {
+  color: $primary-color;
+  background-color: $accent-color;
+}
+
+// Typography
+.impact-heading {
+  position: relative;
+  // font-size: 6rem;
+  color: $shade-color;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  &::before {
+    // content: '';
+    // position: absolute;
+    // bottom: 10px;
+    // width: 3.5rem;
+    // height: 7px;
+    // background: $accent-color;
+    // left: 5px;
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    width: 2.2rem;
+    height: 5px;
+    background: #132410;
+    left: 5px;
+  }
+}
+
+.text-dark {
+  color: $secondary-color;
+}
+
+// Images & containers
+
+.responsive-img {
+  width: 100%;
+  height: 100%;
+   -o-object-fit       : cover;
+     object-fit        : cover;
+  -o-object-position   : center;
+     object-position   : center;
+}
