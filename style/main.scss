@@ -56,3 +56,12 @@ $base-line-height : {{ site.data.settings.theme_settings.line_height_number }};
     font-weight: 700;
   }
 }
+
+.reel {
+  background-color: $accent-color;
+  iframe {
+    // padding-bottom: 56.6%;
+    width: 1600px;
+    height: 900px;
+  }
+}

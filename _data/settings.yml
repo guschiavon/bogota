@@ -49,7 +49,7 @@ navigation:
         - name: Item 3
           url: /
 seo:
-  site_description_text:
+  site_description_text: Um estúdio especializado em imagens em movimento situados no meio de tudo e mais um pouco misturando linguagens e explorando caminhos e entregando no prazo.
   keywords:
 configuration:
   flexbox_framework_code_block: '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">'
