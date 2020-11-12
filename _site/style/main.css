@@ -124,6 +124,8 @@ p { font-size: 4rem; color: #d74600; }
 
 .header .atf-content small h2 { font-weight: 200; font-size: 8rem; text-indent: 3rem; }
 
+@media (min-width: 300px) and (max-width: 660px) { h1, .impact, .header .atf-content h2 { font-size: 3rem; } }
+
 .shaka-container { text-align: right; transform: translateY(-50%); }
 
 .shaka { height: 500px; left: 0 !important; position: relative !important; }
