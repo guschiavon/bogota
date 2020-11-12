@@ -149,11 +149,25 @@
 .text-light {
   color: $secondary-color
 }
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .font-light {
   font-weight: 200;
 }
 .font-bold {
   font-weight: 900;
+}
+.impact {
+  font-size: 10rem;
+  font-weight: 900;
+  color: $primary-color;
 }
 
 // Images & containers

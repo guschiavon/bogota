@@ -32,6 +32,7 @@
 
   <link rel="stylesheet" href="https://use.typekit.net/otf1rmb.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="style/main.css">
 </head>
     <body>
@@ -67,30 +68,140 @@
 <section id="reel" class="reel flex-center padding-y-lg">
   <iframe title="vimeo-player" src="https://player.vimeo.com/video/383154335" frameborder="0" allowfullscreen></iframe>
 </section>
+<section id="tickers" class="tickers">
 
+</section>
+<section id="portfolio" class="portfolio padding-y-md padding-x-lg text-center">
+  <h2 class="impact">trabalhos_</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper padding-x-md">
+        
+        <div class="swiper-slide">
+          <div class="grid-noGutter-spaceAround">
+            <div class="col-5_sm-12-middle">
+              <a href="/portfolios/portfolio-1.html">
+                <img src="/assets/images/placeholder-5.png" alt="campanha Portfolio 1 motion Casas Bahia Bogotá" />
+              </a>
+            </div>
+            <div class="col-5_sm-12-middle">
+              <p class="slide-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos amet ipsa optio veritatis doloremque praesentium omnis. Fugit ipsa expedita eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, illum!</p>
+            </div>
+          </div>
+
+        </div>
+
+        
+        <div class="swiper-slide">
+          <div class="grid-noGutter-spaceAround">
+            <div class="col-5_sm-12-middle">
+              <a href="/portfolios/portfolio-2.html">
+                <img src="/assets/images/placeholder-2.png" alt="campanha Portfolio 2 3d Burger King Bogotá" />
+              </a>
+            </div>
+            <div class="col-5_sm-12-middle">
+              <p class="slide-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos amet ipsa optio veritatis doloremque praesentium omnis. Fugit ipsa expedita eveniet?</p>
+            </div>
+          </div>
+
+        </div>
+
+        
+        <div class="swiper-slide">
+          <div class="grid-noGutter-spaceAround">
+            <div class="col-5_sm-12-middle">
+              <a href="/portfolios/portfolio-3.html">
+                <img src="/assets/images/placeholder-3.png" alt="campanha Portfolio 3 animação Bradesco Bogotá" />
+              </a>
+            </div>
+            <div class="col-5_sm-12-middle">
+              <p class="slide-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos amet ipsa optio veritatis doloremque praesentium omnis. Fugit ipsa expedita eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, illum! Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+
+        </div>
+
+        
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+</section>
       
       <!-- All of your non-critical scripts can go here -->
 <!-- IMPORTANT! If inline-scripts, place them on a '.js' file inside the /js folder and call the script using a <script> tag otherwise conflicts can occur with plugins, namely jekyll-responsive-image -->
-<!-- Load jQuery -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-<!-- jQuery functions are located in the `/js` directory -->
+
+  <!-- Load jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Load GSAP for animations -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+<!-- Load ScrollMagic plugin for GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/TextPlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/EasePack.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.2.0/pixi.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/pixi-filters@3.0.3/dist/pixi-filters.js"></script> -->
-<script src="/js/functions.js" type="text/javascript"></script>
+
+<!-- Load Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+
+  
+   <script>
+    // Shaka Animation
+      const intro = document.querySelector('.shaka');
+      const video = intro.querySelector('video');
+      const text = intro.querySelector('h1');
+
+      // SCROLL MAGIC
+
+      const controller = new ScrollMagic.Controller();
+
+      // Scenes
+      const scene = new ScrollMagic.Scene({
+        duration: 0,
+        triggerElement: intro,
+        triggerHook: 0
+      })
+      // .addIndicators()
+      // .setPin(intro)
+      .addTo(controller);
+
+      // Video Animation
+
+      let accelamount = 0.2;
+      let scrollpos = 0;
+      let delay = 0;
+
+      scene.on('update', e => {
+        scrollpos = e.scrollPos / 1000;
+      });
+
+      setInterval(() => {
+        delay += (scrollpos - delay) * accelamount;
+        video.currentTime = delay;
+      }, 33.3);
+  </script>
+  
 <!-- Add Lazysizes to the /js folder -->
 <!-- <script src="/js/lazysizes.min.js" async=""></script> -->
-<!-- Animate On Scroll lybrary -->
+
+<!-- Animate On Scroll library -->
 <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 <!-- <script>
   AOS.init();
 </script> -->
 <!-- End Animate On Scroll -->
+
+<!-- Custom program -->
+<script src="/js/functions.js" type="text/javascript"></script>
     </body>
   </html>

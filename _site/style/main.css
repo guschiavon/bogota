@@ -46,15 +46,21 @@
 
 .text-light { color: #ffcbcb; }
 
+.text-center { text-align: center; }
+
+.text-right { text-align: right; }
+
 .font-light { font-weight: 200; }
 
 .font-bold { font-weight: 900; }
+
+.impact { font-size: 10rem; font-weight: 900; color: #d74600; }
 
 .responsive-img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; -o-object-position: center; object-position: center; }
 
 .skewed { shape-outside: polygon(0 0, 60% 0, 100% 100%, 0 100%); shape-margin: 20px; clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%); border: 2px solid; }
 
-body { background-color: #ffd1d3; }
+body { background-color: #FFF; }
 
 a { text-decoration: none; }
 
@@ -132,6 +138,16 @@ p { font-size: 4rem; color: #d74600; }
 
 .reel { background-color: #6555ff; }
 
-.reel iframe { width: 1600px; height: 900px; }
+.reel iframe { width: 800px; height: 600px; }
+
+.swiper-container { width: 100%; height: 100%; }
+
+.swiper-slide { text-align: left; /* Center slide text vertically */ width: 800px; height: 600px; overflow: hidden; }
+
+.swiper-slide img { height: 100%; width: 100%; object-fit: contain; }
+
+.swiper-slide .slide-text { font-size: 2.2rem; padding: 2rem; }
+
+.swiper-slide .clickable-image { border: 2px solid #6555ff; }
 
 /*# sourceMappingURL=main.css.map */

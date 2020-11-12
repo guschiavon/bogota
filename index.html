@@ -1,6 +1,14 @@
 ---
 layout: default
+_home: true
 reel_principal_url: 'https://player.vimeo.com/video/383154335'
+portfolios:
+  - thumb_image: 'https://player.vimeo.com/video/383153126'
+    portfolio_url: 
+  - thumb_image: 'https://player.vimeo.com/video/460707024'
+    portfolio_url: 
+  - video_url: 'https://player.vimeo.com/video/244576471'
+    portfolio_url: 
 ---
 <header id="header" class="header padding-x-lg padding-y-md">
   <div class="logo-container mb-1">
@@ -32,4 +40,33 @@ reel_principal_url: 'https://player.vimeo.com/video/383154335'
 </section>
 <section id="reel" class="reel flex-center padding-y-lg">
   <iframe title="vimeo-player" src="{{page.reel_principal_url}}" frameborder="0" allowfullscreen></iframe>
+</section>
+<section id="tickers" class="tickers">
+
+</section>
+<section id="portfolio" class="portfolio padding-y-md padding-x-lg text-center">
+  <h2 class="impact">trabalhos_</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper padding-x-md">
+        {% for portfolio in site.portfolios %}
+        <div class="swiper-slide">
+          <div class="grid-noGutter-spaceAround">
+            <div class="col-5_sm-12-middle">
+              <a href="{{portfolio.url}}">
+                <img src="{{portfolio.thumb_image}}" alt="campanha {{portfolio.title}} {{portfolio.category}} {{portfolio.client}} Bogotá" />
+              </a>
+            </div>
+            <div class="col-5_sm-12-middle">
+              <p class="slide-text">{{portfolio.description_text}}</p>
+            </div>
+          </div>
+
+        </div>
+
+        {% endfor %}
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
 </section>
