@@ -38,9 +38,9 @@
 
 .bg-blue { color: whitesmoke; background-color: #6555ff; }
 
-.text-dark { color: #d74600; }
+.text-dark { color: #d74600 !important; }
 
-.text-light { color: #ffcbcb; }
+.text-light { color: #ffcbcb !important; }
 
 .text-center { text-align: center; }
 
@@ -108,7 +108,7 @@ p { font-size: 4rem; color: #d74600; }
 
 #pages-header .nav-social-link svg { fill: #6555ff; }
 
-.header { position: relative; height: 900px; }
+.header { position: relative; height: 100vh; min-height: 900px; }
 
 .logo-container img { width: 180px; }
 
@@ -121,6 +121,10 @@ p { font-size: 4rem; color: #d74600; }
 .header .atf-content h2 span { text-transform: uppercase; font-weight: 900; }
 
 .header .atf-content small h2 { font-weight: 200; font-size: 8rem; text-indent: 3rem; }
+
+.atf-content { position: relative; }
+
+.atf-content::before { position: absolute; left: -25%; top: -20%; content: ''; background: #ffcbcb; border-radius: 100%; height: 750px; width: 750px; z-index: -1; }
 
 @media (min-width: 300px) and (max-width: 660px) { h1, .impact, .header .atf-content h2 { font-size: 3rem; } }
 
@@ -138,11 +142,11 @@ p { font-size: 4rem; color: #d74600; }
 
 .reel { background-color: #6555ff; }
 
-.reel iframe { width: 800px; height: 600px; }
+.reel iframe { width: 1000px; height: 700px; }
 
 .swiper-container { width: 100%; height: 100%; }
 
-.swiper-slide { text-align: left; /* Center slide text vertically */ width: 800px; height: 600px; overflow: hidden; }
+.swiper-slide { text-align: left; width: 800px; height: 600px; overflow: hidden; }
 
 .swiper-slide img { height: 100%; width: 100%; object-fit: contain; }
 
@@ -164,8 +168,16 @@ p { font-size: 4rem; color: #d74600; }
 
 .swiper-slide .portfolio-preview { width: 90%; }
 
-.tickers p { font-size: 3.2rem; }
+.tickers p { font-size: 3.2rem; letter-spacing: 2px; }
 
 .tickers p strong { color: #6555ff; }
+
+.waves-divider { fill: #6555ff; width: 100%; height: 152px; transform: rotate(180deg); margin-bottom: -7px; }
+
+.team { position: relative; }
+
+.team .impact { position: relative; z-index: 1; }
+
+.team::before { position: absolute; top: -100px; left: 0; content: ''; background: #6555ff; height: 300px; width: 100%; clip-path: ellipse(54% 48%); }
 
 /*# sourceMappingURL=main.css.map */

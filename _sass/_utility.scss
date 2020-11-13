@@ -119,10 +119,10 @@
 
 // Typography
 .text-dark {
-  color: $primary-color;
+  color: $primary-color !important;
 }
 .text-light {
-  color: $secondary-color
+  color: $secondary-color !important;
 }
 
 .text-center {
