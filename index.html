@@ -2,13 +2,6 @@
 layout: default
 _home: true
 reel_principal_url: 'https://player.vimeo.com/video/383154335'
-portfolios:
-  - thumb_image: 'https://player.vimeo.com/video/383153126'
-    portfolio_url: 
-  - thumb_image: 'https://player.vimeo.com/video/460707024'
-    portfolio_url: 
-  - video_url: 'https://player.vimeo.com/video/244576471'
-    portfolio_url: 
 ---
 <header id="header" class="header padding-x-lg padding-y-md">
   <div class="logo-container mb-1">
@@ -31,6 +24,7 @@ portfolios:
   </div>
 </section>
 <section id="scramble" class="scramble padding-x-lg padding-y-md">
+  <hr class="small-divider mb-2">
   <p>Um <span id="line-1" class="word-scramble" onmouseover="setString(lineOneDefault,lineOneArray)" onmouseout="defaultText(lineOneDefault)" data-default-text="estúdio">estúdio</span>
   </p>
   <p>especializado em <span id="line-2" class="word-scramble" onmouseover="setString(lineTwoDefault,lineTwoArray)" onmouseout="defaultText(lineTwoDefault)" data-default-text="imagens em movimento">imagens em movimento</span></p>
@@ -41,29 +35,34 @@ portfolios:
 <section id="reel" class="reel flex-center padding-y-lg">
   <iframe title="vimeo-player" src="{{page.reel_principal_url}}" frameborder="0" allowfullscreen></iframe>
 </section>
-<section id="tickers" class="tickers">
-
+<section id="tickers" class="tickers text-center padding-x-md padding-y-md">
+  <p class="r-to-l">Lorem <strong>enphasis</strong> ipsum dolor sit amet consectetur adipisicing elit. </p>
+  <p class="l-to-r">Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit. </p>
+  <p class="r-to-l">Lorem ipsum <strong>dolor sit</strong> amet consectetur adipisicing elit. </p>
+  <p class="l-to-r">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 </section>
-<section id="portfolio" class="portfolio padding-y-md padding-x-lg text-center">
-  <h2 class="impact">trabalhos_</h2>
+<section id="portfolio" class="portfolio padding-y-md padding-x-lg text-center bg-pink">
+  <h2 class="impact editable">Trabalhos_</h2>
     <div class="swiper-container">
       <div class="swiper-wrapper padding-x-md">
         {% for portfolio in site.portfolios %}
         <div class="swiper-slide">
-          <div class="grid-noGutter-spaceAround">
-            <div class="col-5_sm-12-middle">
-              <iframe src="{{portfolio.video_url}}" height="600" width="800" frameborder="0"></iframe>
-              <!-- <a href="{{portfolio.url}}">
-                <img src="{{portfolio.thumb_image}}" alt="campanha {{portfolio.title}} {{portfolio.category}} {{portfolio.client}} Bogotá" />
-              </a> -->
+          <div class="grid-noGutter-spaceAround-equalHeight">
+            <div class="col-5_md-12-middle slide-frame flex-center">
+              <iframe src="{{portfolio.video_url}}" frameborder="0" class="portfolio-preview"></iframe>              
             </div>
-            <div class="col-5_sm-12-middle">
-              <p class="slide-text">{{portfolio.description_text}}</p>
+            <div class="col-5_md-12-middle">
+              <div class="portfolio-container padding-y-lg">
+                {% for category in portfolio.categories %}
+                <span class="portfolio-category">{{category}}</span>
+                {% endfor %}
+                <span class="portfolio-title">{{portfolio.title}}</span>
+                <span class="portfolio-subtitle">{{portfolio.client}}</span>
+                <span class="portfolio-subtitle">{{portfolio.agency}}</span>
+              </div>
             </div>
           </div>
-
         </div>
-
         {% endfor %}
       </div>
       <div class="swiper-button-prev"></div>

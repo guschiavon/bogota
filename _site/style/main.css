@@ -32,15 +32,11 @@
 
 .padding-y-lg { padding-top: 5rem; padding-bottom: 5rem; }
 
-.bg-light { background-color: #d74600; color: #ffcbcb; }
+.bg-pink { background-color: #ffcbcb; color: #d74600; }
 
-.bg-dark { background-color: #ffcbcb; color: #d74600; }
+.bg-orange { background-color: #ffcbcb; color: #d74600; }
 
-.bg-accent { color: #d74600; background-color: #6555ff; }
-
-.impact-heading { position: relative; color: #789572; font-size: 4rem; text-transform: uppercase; font-weight: lighter; }
-
-.impact-heading::before { content: ''; position: absolute; bottom: 2px; width: 2.2rem; height: 5px; background: #132410; left: 5px; }
+.bg-blue { color: whitesmoke; background-color: #6555ff; }
 
 .text-dark { color: #d74600; }
 
@@ -54,13 +50,13 @@
 
 .font-bold { font-weight: 900; }
 
-.impact { font-size: 10rem; font-weight: 900; color: #d74600; }
+.impact { font-size: 10rem; text-transform: lowercase; font-weight: 900; color: #d74600; }
 
 .responsive-img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; -o-object-position: center; object-position: center; }
 
-.skewed { shape-outside: polygon(0 0, 60% 0, 100% 100%, 0 100%); shape-margin: 20px; clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%); border: 2px solid; }
+.small-divider { height: 10px; background: #6555ff; width: 100px; border: none; }
 
-body { background-color: #FFF; }
+body { background-color: #FFF; overflow-x: hidden; }
 
 a { text-decoration: none; }
 
@@ -148,8 +144,24 @@ p { font-size: 4rem; color: #d74600; }
 
 .swiper-slide img { height: 100%; width: 100%; object-fit: contain; }
 
-.swiper-slide .slide-text { font-size: 2.2rem; padding: 2rem; }
+.swiper-slide .portfolio-container { min-height: 450px; }
+
+.swiper-slide .portfolio-container.flex-center { flex-direction: column; }
+
+.swiper-slide .portfolio-title { font-size: 2.2rem; font-weight: bold; padding: 2rem 0; text-transform: uppercase; }
+
+.swiper-slide .portfolio-subtitle { font-size: 1.5rem; }
+
+.swiper-slide .portfolio-title, .swiper-slide .portfolio-subtitle { display: block; }
+
+.swiper-slide .portfolio-category { font-size: 1.2rem; padding: 0.6rem 1.2rem; border-radius: 5px; background-color: #6555ff; color: #ffcbcb; }
 
 .swiper-slide .clickable-image { border: 2px solid #6555ff; }
+
+.swiper-slide .slide-frame { border: 2px solid #6555ff; }
+
+.swiper-slide .portfolio-preview { width: 90%; }
+
+.tickers p strong { color: #6555ff; }
 
 /*# sourceMappingURL=main.css.map */

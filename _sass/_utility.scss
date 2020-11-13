@@ -102,47 +102,22 @@
 }
 
 // Background Classes
-.bg-light {
-  background-color: $primary-color;
-  color: $secondary-color;
-}
-
-.bg-dark {
+.bg-pink {
   background-color: $secondary-color;
   color: $primary-color;
 }
 
-.bg-accent {
+.bg-orange {
+  background-color: $secondary-color;
   color: $primary-color;
+}
+
+.bg-blue {
+  color: whitesmoke;
   background-color: $accent-color;
 }
 
 // Typography
-.impact-heading {
-  position: relative;
-  // font-size: 6rem;
-  color: $shade-color;
-  font-size: 4rem;
-  text-transform: uppercase;
-  font-weight: lighter;
-  &::before {
-    // content: '';
-    // position: absolute;
-    // bottom: 10px;
-    // width: 3.5rem;
-    // height: 7px;
-    // background: $accent-color;
-    // left: 5px;
-    content: '';
-    position: absolute;
-    bottom: 2px;
-    width: 2.2rem;
-    height: 5px;
-    background: #132410;
-    left: 5px;
-  }
-}
-
 .text-dark {
   color: $primary-color;
 }
@@ -166,6 +141,7 @@
 }
 .impact {
   font-size: 10rem;
+  text-transform: lowercase;
   font-weight: 900;
   color: $primary-color;
 }
@@ -180,9 +156,10 @@
   -o-object-position   : center;
      object-position   : center;
 }
-.skewed {
-  shape-outside: polygon(0 0, 60% 0, 100% 100%, 0 100%);
-   shape-margin: 20px;
-  clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%);
-  border: 2px solid;
+
+.small-divider {
+  height: 10px;
+  background: $accent-color;
+  width: 100px;
+  border: none;
 }
