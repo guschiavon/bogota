@@ -131,6 +131,9 @@ $base-line-height : {{ site.data.settings.theme_settings.line_height_number }};
   }
 }
 
-.tickers p strong {
-  color: $accent-color
+.tickers p {
+  font-size: 3.2rem;
+  strong {
+    color: $accent-color;
+  }
 }

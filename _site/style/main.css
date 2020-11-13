@@ -46,6 +46,8 @@
 
 .text-right { text-align: right; }
 
+.text-justify { text-align: justify; }
+
 .font-light { font-weight: 200; }
 
 .font-bold { font-weight: 900; }
@@ -161,6 +163,8 @@ p { font-size: 4rem; color: #d74600; }
 .swiper-slide .slide-frame { border: 2px solid #6555ff; }
 
 .swiper-slide .portfolio-preview { width: 90%; }
+
+.tickers p { font-size: 3.2rem; }
 
 .tickers p strong { color: #6555ff; }
 

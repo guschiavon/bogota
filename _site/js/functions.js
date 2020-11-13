@@ -58,45 +58,38 @@ const defaultText = function (i) {
 
 // ticker on scroll
 gsap.registerPlugin(ScrollTrigger);
-// let tl = gsap.timeline({
-//     scrollTrigger: {
+
+
+gsap.to('.r-to-l', {
+  scrollTrigger: {
+    // markers: true,
+    scrub: 0.8,
+    end: "bottom 10%",
+    trigger: ".tickers",
+    toggleActions: "restart none reverse pause"
+  },
+  x: 200,
+  duration: 3,
+});
+gsap.to('.l-to-r', {
+  scrollTrigger: {
+    // markers: true,
+    scrub: 0.8,
+    end: "bottom 10%",
+    trigger: ".tickers",
+    toggleActions: "restart none reverse pause"
+  },
+  x: -200,
+  duration: 3
+});
+// gsap.to('.l-to-r', {
+//   scrollTrigger: {
 //     scrub: 1,
 //     end: 'bottom 10%',
 //     trigger: '.tickers',
 //     toggleActions: "restart none reverse pause",
-//   }
-// });
-gsap.to('.r-to-l', {
-  scrollTrigger: {
-    scrub: 1,
-    end: 'bottom 10%',
-    trigger: '.tickers',
-    toggleActions: "restart none reverse pause",
-  },
-  x: 200,
-  duration: 3,
-  scale: 1.2
-});
-gsap.to('.l-to-r', {
-  scrollTrigger: {
-    scrub: 1,
-    end: 'bottom 10%',
-    trigger: '.tickers',
-    toggleActions: "restart none reverse pause",
-  },
-  x: -200,
-  duration: 3,
-  scale: 1.2
-});
-// gsap.to('.l-to-r', {
-//   scrollTrigger: {
-//     markers: true,
-//     scrub: 1,
-//     start: 'bottom 80%',
-//     end: 'top 10px',
-//     trigger: '.tickers',
-//     toggleActions: "restart none reverse pause",
 //   },
 //   x: -200,
-//   duration: 3
+//   duration: 3,
+//   scale: 1.2
 // });
