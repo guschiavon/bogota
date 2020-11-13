@@ -57,7 +57,7 @@ const defaultText = function (i) {
 };
 
 // ticker on scroll
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, CSSRulePlugin, CSSPlugin);
 
 
 gsap.to('.r-to-l', {
@@ -83,14 +83,5 @@ gsap.to('.l-to-r', {
   duration: 3
 
 });
-// gsap.to('.l-to-r', {
-//   scrollTrigger: {
-//     scrub: 1,
-//     end: 'bottom 10%',
-//     trigger: '.tickers',
-//     toggleActions: "restart none reverse pause",
-//   },
-//   x: -200,
-//   duration: 3,
-//   scale: 1.2
-// });
+
+let bogotaBubble = CSSRulePlugin.getRule('.atf-content:before');
