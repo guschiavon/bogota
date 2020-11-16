@@ -20,20 +20,18 @@ equipe:
     alt_text: Caja Guedes Bogotá
     bio_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem ut libero optio beatae explicabo sint eum unde quisquam molestiae!
 ---
+
 <header id="header" class="header padding-x-lg padding-y-md">
   <div class="logo-container mb-1">
-    <a href="/"><img src="/assets/graphics/logo-main-fill.svg" alt="bogotá estúdio video motion graphics"></a>
+    <a href="/"><img src="/assets/graphics/logo-main-fill.svg" alt="bogotá estúdio video motion graphics" /></a>
   </div>
-  <hr class="blue-divider">
+  <hr class="blue-divider" />
   <div class="atf-content editable">
-    <h2>
-      ¡Hola!
-    </h2>
-    <small><h2>Somos a</h2></small>
-    <h2>
-      <span>Bogotá.</span>
-    </h2>
-  </div>
+  <h2>&iexcl;Hola!</h2>
+  <p><small></small></p>
+  <h2><small>Somos a</small></h2>
+  <h2><span>Bogot&aacute;.</span></h2>
+</div>
   <nav class="desktop-nav">
     <ul>
       <li class="nav-link"><a href="/">Bogotá</a></li>
@@ -51,7 +49,7 @@ equipe:
   </div>
 </section>
 <section id="scramble" class="scramble padding-x-lg padding-y-md">
-  <hr class="small-divider mb-2">
+  <hr class="small-divider mb-2" />
   <p>Um <span id="line-1" class="word-scramble" onmouseover="setString(lineOneDefault,lineOneArray)" onmouseout="defaultText(lineOneDefault)" data-default-text="estúdio">estúdio</span></p>
   <p>especializado em <span id="line-2" class="word-scramble" onmouseover="setString(lineTwoDefault,lineTwoArray)" onmouseout="defaultText(lineTwoDefault)" data-default-text="imagens em movimento">imagens em movimento</span></p>
   <p>situados <span id="line-3" class="word-scramble" onmouseover="setString(lineThreeDefault,lineThreeArray)" onmouseout="defaultText(lineThreeDefault)" data-default-text="no meio de tudo e mais um pouco">no meio de tudo e mais um pouco</span></p>
@@ -59,12 +57,7 @@ equipe:
   <p>e entregando <span id="line-5" class="word-scramble" onmouseover="setString(lineFiveDefault,lineFiveArray)" onmouseout="defaultText(lineFiveDefault)" data-default-text="no prazo.">no prazo.</span></p>
 </section>
 <div style="overflow: hidden;">
-  <svg
-    preserveAspectRatio="none"
-    viewBox="0 0 1200 120"
-    xmlns="http://www.w3.org/2000/svg"
-    class="waves-divider"
-  >
+  <svg preserveaspectratio="none" viewbox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" class="waves-divider">
     <path d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" />
     <g class="wave">
    <use xlink:href="#gentle-wave" x="50" y="3" />
@@ -76,13 +69,23 @@ equipe:
   <iframe title="vimeo-player" src="{{page.reel_principal_url}}" frameborder="0" allowfullscreen></iframe>
 </section>
 <section id="tickers" class="tickers bg-pink text-center padding-y-md">
-  <p class="editable r-to-l">Lorem <strong>enphasis</strong> ipsum dolor sit amet consectetur adipisicing.</p>
-  <p class="editable l-to-r">Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit. </p>
-  <p class="editable r-to-l">Lorem ipsum <strong>dolor sit</strong> amet consectetur adipisicing elit. </p>
-  <p class="editable l-to-r">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+  <p class="editable r-to-l">
+    <strong>anima&ccedil;&atilde;o.&nbsp;</strong>motion. 2d. 3d. dire&ccedil;&atilde;o criativa. ilustra&ccedil;&atilde;o.
+  </p>
+  <p class="editable l-to-r">
+    storyboard. dire&ccedil;&atilde;o de arte. <strong>publicidade. </strong>frame-a-frame.
+  </p>
+  <p class="editable r-to-l">
+    roteiro. <strong>p&oacute;s-produ&ccedil;&atilde;o.&nbsp;</strong>edi&ccedil;&atilde;o. composition. coordena&ccedil;&atilde;o.
+  </p>
+  <p class="editable l-to-r">
+    vfx. color grading. finaliza&ccedil;&atilde;o. projetos. <strong>id&eacute;ias.</strong> e mucho m&aacute;s.
+  </p>
 </section>
 <section id="portfolio" class="portfolio padding-y-md padding-x-lg text-center bg-pink">
-  <h2 class="impact editable">Trabalhos_</h2>
+  <h2 class="impact editable">
+    Trabalhos_
+  </h2>
     <div class="swiper-container">
       <div class="swiper-wrapper padding-x-md">
         {% for portfolio in site.portfolios %}
@@ -112,12 +115,14 @@ equipe:
 </section>
 <section id="team" class="team bg-blue text-right">
   <div class="padding-x-lg padding-y-md">
-    <h2 id="team-title" class="impact text-light editable">Time_</h2>
+    <h2 id="team-title" class="impact text-light editable">
+      Time_
+    </h2>
     {% for member in page.equipe %}
     <div class="team-member grid-noGutter{% cycle '', '-reverse' %} padding-x-lg padding-y-md">
       <div class="col-6_md-12-middle">
         <div class="team-avatar">
-          <img src="{{member.avatar_image}}" class="responsive-img" alt="{{member.alt_text}}">
+          <img src="{{member.avatar_image}}" class="responsive-img" alt="{{member.alt_text}}" />
         </div>
       </div>
       <div class="col-6_md-12-middle team-bio">
