@@ -6,10 +6,12 @@ general:
   social:
     - icon: "Instagram"
       url: 'https://instagram.com/'
-    - icon: "YouTube"
-      url: 'https://youtube.com/'
+    - icon: "Vimeo"
+      url: 'https://vimeo.com/'
     - icon: "Facebook"
       url: 'https://facebook.com/'
+    - icon: "LinkedIn"
+      url: 'https://linkedin.com/'
     
 branding:
   site_title: Bogotá

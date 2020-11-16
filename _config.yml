@@ -12,8 +12,11 @@ collections:
 
 icons:
   - "Facebook"
+  - "Messenger"
   - "Twitter"
+  - "LinkedIn"
   - "Instagram"
+  - "Pinterest"
   - "YouTube"
   - "Vimeo"
   - "Dribble"
@@ -22,6 +25,7 @@ icons:
   - "Email"
   - "Share"
   - "Behance"
+  - "WhatsApp"
 
 _comments:
   preview_image: A imagem que será utilizada quando compartilhando pelas redes sociais. Recomenda-se formato jpg com máximo de 600px de largura.

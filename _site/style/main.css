@@ -98,7 +98,11 @@ p { font-size: 4rem; color: #d74600; }
 
 #pages-header .nav-social-link svg { fill: #6555ff; }
 
+.footer .footer-social-link { padding: 0.3rem; margin-left: 1rem; }
+
 .footer .footer-social-link svg { width: 35px; fill: #6555ff; }
+
+.footer .footer-contact h3, .footer .footer-contact a { font-size: 2.5rem; color: #6555ff; }
 
 .header { position: relative; height: 100vh; min-height: 900px; }
 
