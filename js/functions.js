@@ -62,24 +62,24 @@ gsap.registerPlugin(ScrollTrigger, CSSRulePlugin, CSSPlugin);
 gsap.to('.r-to-l', {
   scrollTrigger: {
     // markers: true,
-    scrub: 0.8,
+    scrub: 0.3,
     end: "bottom 10%",
     trigger: ".tickers",
     toggleActions: "restart none reverse pause"
   },
-  x: 200,
-  duration: 3,
+  translateX: 200,
+  duration: 1,
 });
 gsap.to('.l-to-r', {
   scrollTrigger: {
     // markers: true,
-    scrub: 0.8,
+    scrub: 0.3,
     end: "bottom 10%",
     trigger: ".tickers",
     toggleActions: "restart none reverse pause"
   },
-  x: -200,
-  duration: 3
+  translateX: -200,
+  duration: 1
 });
 
 // Above-the-fold items

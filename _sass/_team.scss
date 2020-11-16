@@ -19,8 +19,9 @@
   }
   .team-avatar {
     position: relative;
-    height: 400px;
-    width: 400px;
+    $axis: 400px;
+    height: $axis;
+    width: $axis;
     img {
       position: relative;
     }

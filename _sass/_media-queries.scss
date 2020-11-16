@@ -1,13 +1,56 @@
 @media (min-width: 300px) and (max-width: 660px) {
   h1,
-  .impact  {
+  .impact {
     font-size: 3rem;
   }
-  .header .atf-content h2 {
-    font-size: 7.5rem;
+  .header {
+    .atf-content {
+      h2 {
+        font-size: 4.5rem;
+      }
+      small h2 {
+        font-size: 2.3rem;
+      }
+    }
   }
   p,
   .tickers p {
-    font-size: 2.7rem;
+    font-size: 2.2rem;
+  }
+  .atf-content::before {
+    width: 360px;
+    height: 360px;
+  }
+  .reel iframe {
+    height: 200px;
+  }
+  .waves-divider {
+    height: 32px;
+    margin-bottom: -6px;
+  }
+  .footer .footer-contact h3,
+  .footer .footer-contact a {
+    font-size: 2rem;
+  }
+  .team {
+    &::before {
+      top: -50px;
+      height: 100px;
+    }
+    .team-avatar {
+      width: 300px;
+      height: 300px;
+    }
+    .team-bio {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .desktop-nav {
+    .nav-link {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
   }
 }
