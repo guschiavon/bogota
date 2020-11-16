@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/portfolios/portfolio-1.html</loc>
-<lastmod>2020-11-16T08:54:35-03:00</lastmod>
+<lastmod>2020-11-16T10:51:12-03:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/portfolios/portfolio-2.html</loc>
-<lastmod>2020-11-16T08:54:35-03:00</lastmod>
+<lastmod>2020-11-16T10:51:12-03:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/portfolios/portfolio-3.html</loc>
-<lastmod>2020-11-16T08:54:35-03:00</lastmod>
+<lastmod>2020-11-16T10:51:12-03:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>

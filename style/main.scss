@@ -7,8 +7,8 @@
 $primary-color          : {{site.data.settings.theme_settings.primary_color}};
 $secondary-color        : {{site.data.settings.theme_settings.secondary_color}};
 $accent-color           : {{site.data.settings.theme_settings.accent_color}};
-$shade-color            : {{site.data.settings.theme_settings.shade_color}};
-$complementary-color    : {{site.data.settings.theme_settings.complementary_color}};
+// $shade-color            : {{site.data.settings.theme_settings.shade_color}};
+// $complementary-color    : {{site.data.settings.theme_settings.complementary_color}};
 
 // Fonts
 $body-font        : {{ site.data.settings.theme_settings.body_font_family }};
@@ -26,6 +26,7 @@ $base-line-height : {{ site.data.settings.theme_settings.line_height_number }};
   "_nav",
   "_footer",
   "_header",
+  "_team",
   "_media-queries";
 
 .shaka-container {

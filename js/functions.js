@@ -62,7 +62,7 @@ gsap.registerPlugin(ScrollTrigger, CSSRulePlugin, CSSPlugin);
 
 gsap.to('.r-to-l', {
   scrollTrigger: {
-    markers: true,
+    // markers: true,
     scrub: 0.8,
     end: "bottom 10%",
     trigger: ".tickers",
@@ -73,7 +73,7 @@ gsap.to('.r-to-l', {
 });
 gsap.to('.l-to-r', {
   scrollTrigger: {
-    markers: true,
+    // markers: true,
     scrub: 0.8,
     end: "bottom 10%",
     trigger: ".tickers",

@@ -1,53 +1,50 @@
 general:
   site_url:
   address:
-  email:
-  phone:
-  facebook_url: 'https://facebook.com'
-  instagram_url: 'https://instagram.com/'
-  instagram_handle: ''
-  twitter_url: 'https://twitter.com'
-  twitter_handle: '@yourhandle'
-  youtube_url: 'https://youtube.com'
-  github_url: 'https://github.com'
-  linkedin_url: 'https://linkedin.com/'
-  snapchat_url: 'https://snapchat.com'
-  stackoverflow_url: 'https://stackoverflow.com'
-  vimeo_url: 'https://vimeo.com'
+  email: 'ola@somosbogota.tv'
+  phone: '+55 (41) 9999-99999'
+  social:
+    - icon: "Instagram"
+      url: 'https://instagram.com/'
+    - icon: "YouTube"
+      url: 'https://youtube.com/'
+    - icon: "Facebook"
+      url: 'https://facebook.com/'
+    
 branding:
   site_title: Bogotá
   nav_logo_image: /assets/graphics/logo-main-fill.svg
-  footer_logo_image:
+  footer_logo_image: /assets/graphics/logo-outline-alt.svg
   preview_image:
 theme_settings:
   primary_color: '#d74600'
   secondary_color: '#ffcbcb'
   accent_color: '#6555ff'
-  shade_color: '#789572'
-  complementary_color: '#2f2f2f'
+  # shade_color: '#789572'
+  # complementary_color: '#2f2f2f'
   font_family_embed_code_block: '<link rel="stylesheet" href="https://use.typekit.net/otf1rmb.css">'
   body_font_family: '"Sofia Pro", sans-serif'
   heading_font_family: '"Sofia Pro", sans-serif'
   body_font_size_number: 1.1rem
   line_height_number: 1.8
-navigation:
-  menus:
-    - name: About
-      url: /about
-      is_dropdown: false
-      submenus:
-        - name:
-          url:
-    - name: Dropdown
-      url: '#'
-      is_dropdown: true
-      submenus:
-        - name: Item 1
-          url: /
-        - name: Item 2
-          url: /
-        - name: Item 3
-          url: /
+# navigation:
+#   menus:
+#     - name: About
+#       url: /about
+#       is_dropdown: false
+#       submenus:
+#         - name:
+#           url:
+#     - name: Dropdown
+#       url: '#'
+#       is_dropdown: true
+#       submenus:
+#         - name: Item 1
+#           url: /
+#         - name: Item 2
+#           url: /
+#         - name: Item 3
+#           url: /
 seo:
   site_description_text: Um estúdio especializado em imagens em movimento situados no meio de tudo e mais um pouco misturando linguagens e explorando caminhos e entregando no prazo.
   keywords:

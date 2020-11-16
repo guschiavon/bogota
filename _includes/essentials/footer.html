@@ -1,0 +1,11 @@
+<footer id="footer" class="footer padding-x-lg padding-y-md bg-pink">
+  <div class="footer-contact">
+    <h3 class="email"><a href="mailto:{{site.data.settings.general.email}}">{{site.data.settings.general.email}}</a></h3>
+    <h3 class="phone"><a href="tel:{{site.data.settings.general.phone | remove: ' ' | remove: '-' | remove: '(' | remove: ')'}}">{{site.data.settings.general.phone}}</a></h3>
+  </div>
+  <div class="footer-social">
+    {% for item in site.data.settings.general.social %}
+    <a href="{{item.url}}" class="footer-social-link">{% include essentials/social-icons.html icon=item.icon %}</a>
+    {% endfor %}
+  </div>
+</footer>

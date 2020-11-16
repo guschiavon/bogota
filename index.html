@@ -2,6 +2,23 @@
 layout: default
 _home: true
 reel_principal_url: 'https://player.vimeo.com/video/383154335'
+equipe:
+  - nome: Caja Guedes
+    avatar_image: /assets/images/cajaa.png
+    alt_text: Caja Guedes Bogotá
+    bio_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem ut libero optio beatae explicabo sint eum unde quisquam molestiae!
+  - nome: Denise Azzi
+    avatar_image: /assets/images/denise.png
+    alt_text: Caja Guedes Bogotá
+    bio_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem ut libero optio beatae explicabo sint eum unde quisquam molestiae!
+  - nome: Tiago Bahia
+    avatar_image: /assets/images/bahia.png
+    alt_text: Caja Guedes Bogotá
+    bio_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem ut libero optio beatae explicabo sint eum unde quisquam molestiae!
+  - nome: Gessica Secchi
+    avatar_image: /assets/images/gessica.png
+    alt_text: Caja Guedes Bogotá
+    bio_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem ut libero optio beatae explicabo sint eum unde quisquam molestiae!
 ---
 <header id="header" class="header padding-x-lg padding-y-md">
   <div class="logo-container mb-1">
@@ -17,14 +34,13 @@ reel_principal_url: 'https://player.vimeo.com/video/383154335'
       <span>Bogotá.</span>
     </h2>
   </div>
-  <nav>
+  <nav class="desktop-nav">
     <ul>
-      <li>link</li>
-      <li>link</li>
-      <li>link</li>
-      <li>link</li>
-      <li>link</li>
-      <li>link</li>
+      <li class="nav-link"><a href="/">Bogotá</a></li>
+      <li class="nav-link"><a href="#reel">Reel</a></li>
+      <li class="nav-link"><a href="#portfolio">Trabalhos</a></li>
+      <li class="nav-link"><a href="#team">Time</a></li>
+      <li class="nav-link"><a href="#footer">Contato</a></li>
     </ul>
   </nav>
 </header>
@@ -115,7 +131,20 @@ d="M-160 44c30 0
 <section id="team" class="team bg-blue text-right">
   <div class="padding-x-lg padding-y-md">
     <h2 class="impact text-light editable">Time_</h2>
+    {% for member in page.equipe %}
+    <div class="team-member grid-noGutter{% cycle '', '-reverse' %} padding-x-lg padding-y-md">
+      <div class="col-6_md-12-middle">
+        <div class="team-avatar">
+          <img src="{{member.avatar_image}}" class="responsive-img" alt="{{member.alt_text}}">
+        </div>
+      </div>
+      <div class="col-6_md-12-middle team-bio">
+        <h3 class="team-name">{{member.nome}}</h3>
+        <p>
+          {{member.bio_text}}
+        </p>
+      </div>
+    </div>
+    {% endfor %}
   </div>
-
-
 </section>

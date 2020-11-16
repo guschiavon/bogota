@@ -9,3 +9,20 @@ uploads_dir: "assets/images"
 collections:
   portfolios:
     output: true
+
+icons:
+  - "Facebook"
+  - "Twitter"
+  - "Instagram"
+  - "YouTube"
+  - "Vimeo"
+  - "Dribble"
+  - "Stack Overflow"
+  - "Github"
+  - "Email"
+  - "Share"
+  - "Behance"
+
+_comments:
+  preview_image: A imagem que será utilizada quando compartilhando pelas redes sociais. Recomenda-se formato jpg com máximo de 600px de largura.
+  

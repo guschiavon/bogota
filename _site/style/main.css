@@ -58,7 +58,7 @@
 
 .small-divider { height: 10px; background: #6555ff; width: 100px; border: none; }
 
-body { background-color: #FFF; overflow-x: hidden; }
+body { background-color: #FFF; overflow-x: hidden; scroll-behavior: smooth; }
 
 a { text-decoration: none; }
 
@@ -68,25 +68,15 @@ p, a, span, ol, ul, li, button, input, label, textarea, div, small, blockquote, 
 
 p { font-size: 4rem; color: #d74600; }
 
-.sticky-nav-bar { position: sticky; padding: 1rem unset; }
+.desktop-nav { padding: 3rem 0; display: flex; flex-direction: column; align-items: flex-end; justify-content: center; }
 
-.sticky-nav-bar .nav-branding { position: relative; }
+.desktop-nav .nav-link { cursor: pointer; text-transform: uppercase; font-size: 1.5rem; writing-mode: vertical-rl; list-style: none; text-orientation: sideways-right; padding: 0.3rem 0; margin-bottom: 2rem; }
 
-.sticky-nav-bar .nav-branding .nav-logo { width: 150px; height: auto; }
+.desktop-nav .nav-link a { color: #d74600; transition: .3s all; }
 
-.sticky-nav-bar .nav-branding .nav-logo:hover svg { fill: white; }
+.desktop-nav .nav-link a:hover, .desktop-nav .nav-link a:focus { color: #6555ff; transition: .3s all; }
 
-.sticky-nav-bar .nav-branding .nav-title { text-transform: uppercase; color: #ffcbcb; font-family: "Sofia Pro", sans-serif; font-weight: bold; font-size: 1rem; }
-
-.sticky-nav-bar .nav-container .nav-link { font-size: 1rem; letter-spacing: 2px; text-transform: uppercase; padding: 0 0.3rem; margin: 0 0.5rem; color: #d74600; font-family: "Sofia Pro", sans-serif; }
-
-.sticky-nav-bar .nav-container .nav-link:hover { color: #789572; }
-
-.sticky-nav-bar .nav-social-link { padding: 0 0.3rem; margin-left: 0.3rem; }
-
-.sticky-nav-bar .nav-social-link svg { width: 15px; fill: #d74600; }
-
-.sticky-nav-bar .nav-social-link:hover svg { fill: #789572; }
+.desktop-nav .nav-link:last-of-type { margin-bottom: none; }
 
 .dropdown { position: relative; display: inline-block; }
 
@@ -108,6 +98,8 @@ p { font-size: 4rem; color: #d74600; }
 
 #pages-header .nav-social-link svg { fill: #6555ff; }
 
+.footer .footer-social-link svg { width: 35px; fill: #6555ff; }
+
 .header { position: relative; height: 100vh; min-height: 900px; }
 
 .logo-container img { width: 180px; }
@@ -125,6 +117,22 @@ p { font-size: 4rem; color: #d74600; }
 .atf-content { position: relative; }
 
 .atf-content::before { position: absolute; left: -25%; top: -20%; content: ''; background: #ffcbcb; border-radius: 100%; height: 750px; width: 750px; z-index: -1; }
+
+.team .team-member:nth-of-type(even) .team-avatar { margin-left: auto; }
+
+.team .team-member:nth-of-type(even) .team-bio, .team .team-member:nth-of-type(even) .team-name { text-align: left; }
+
+.team .team-member:nth-of-type(even) .team-avatar::before { bottom: -4rem; right: -4rem; top: unset; left: unset; }
+
+.team .team-avatar { position: relative; height: 400px; width: 400px; }
+
+.team .team-avatar img { position: relative; }
+
+.team .team-avatar::before { position: absolute; top: -4rem; left: -4rem; content: ""; height: inherit; width: inherit; border: 4px solid #ffcbcb; border-radius: 100%; z-index: 0; }
+
+.team .team-name { text-transform: uppercase; color: #ffcbcb; font-size: 2.5rem; }
+
+.team .team-bio p { font-size: 2rem; font-weight: 200; color: #ffcbcb; }
 
 @media (min-width: 300px) and (max-width: 660px) { h1, .impact, .header .atf-content h2 { font-size: 3rem; } }
 
