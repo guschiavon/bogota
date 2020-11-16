@@ -67,7 +67,7 @@ gsap.to('.r-to-l', {
     trigger: ".tickers",
     toggleActions: "restart none reverse pause"
   },
-  translateX: 200,
+  x: 200,
   duration: 1,
 });
 gsap.to('.l-to-r', {
@@ -78,7 +78,7 @@ gsap.to('.l-to-r', {
     trigger: ".tickers",
     toggleActions: "restart none reverse pause"
   },
-  translateX: -200,
+  x: -200,
   duration: 1
 });
 
@@ -119,17 +119,18 @@ gsap.to(menuNav, {
   },
 });
 
-// let elTeam = CSSRulePlugin.getRule("#team-title");
+let backButton = CSSRulePlugin.getRule(".back-to-top");
 
-// gsap.from(elTeam, {
-//   scrollTrigger: {
-//     markers: true,
-//     trigger: "#team",
-//     start: "bottom 90%",
-//     end: "bottom 80%"
-
-//   },
-//   cssRule: {
-//     translateX: "-200%"
-//   }
-// })
+gsap.to(backButton, {
+  scrollTrigger: {
+    // markers: true,
+    trigger: ".atf-content",
+    scrub: 0.3,
+    start: "top 25%",
+    end: "bottom 20%",
+    toggleActions: "restart none reverse pause",
+  },
+  cssRule: {
+    translateY: "0",
+  },
+});
