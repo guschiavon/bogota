@@ -58,8 +58,7 @@ const defaultText = function (i) {
 
 // ticker on scroll
 gsap.registerPlugin(ScrollTrigger, CSSRulePlugin, CSSPlugin);
-
-
+// Each of these tweens animates the lines by class right to left and left to right
 gsap.to('.r-to-l', {
   scrollTrigger: {
     // markers: true,
@@ -81,7 +80,56 @@ gsap.to('.l-to-r', {
   },
   x: -200,
   duration: 3
-
 });
 
-let bogotaBubble = CSSRulePlugin.getRule('.atf-content:before');
+// Above-the-fold items
+let bogotaBubble = CSSRulePlugin.getRule(".atf-content:before");
+let menuNav = CSSRulePlugin.getRule(".desktop-nav");
+// Makes the bubble go to the outside left of screen
+gsap.to(bogotaBubble, {
+  scrollTrigger: {
+    trigger: ".atf-content",
+    // markers: true,
+    scrub: 0.3,
+    start: "top 25%",
+    end: "bottom 20%",
+    toggleActions: "restart none reverse pause",
+    pin: true,
+  },
+  cssRule: {
+    translateX: "-25%",
+    height: 200,
+    width: 200,
+  },
+});
+// Makes the menu disappear to the right of the screen
+gsap.to(menuNav, {
+  scrollTrigger: {
+    trigger: ".atf-content",
+    // markers: true,
+    scrub: 0.3,
+    start: "top 25%",
+    end: "bottom 20%",
+    toggleActions: "restart none reverse pause",
+    pin: true,
+  },
+  cssRule: {
+    translateX: "100%",
+    
+  },
+});
+
+// let elTeam = CSSRulePlugin.getRule("#team-title");
+
+// gsap.from(elTeam, {
+//   scrollTrigger: {
+//     markers: true,
+//     trigger: "#team",
+//     start: "bottom 90%",
+//     end: "bottom 80%"
+
+//   },
+//   cssRule: {
+//     translateX: "-200%"
+//   }
+// })

@@ -20,7 +20,6 @@
     color: $primary-color;
     font-size: 12rem;
     line-height: 1;
-    
     span {
       text-transform: uppercase;
       font-weight: 900;
@@ -37,7 +36,7 @@
   &::before {
     position: absolute;
     left: -25%;
-    top:-20%;
+    top: -20%;
     content: '';
     background: $secondary-color;
     border-radius: 100%;

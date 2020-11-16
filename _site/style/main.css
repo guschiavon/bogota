@@ -122,6 +122,8 @@ p { font-size: 4rem; color: #d74600; }
 
 .atf-content::before { position: absolute; left: -25%; top: -20%; content: ''; background: #ffcbcb; border-radius: 100%; height: 750px; width: 750px; z-index: -1; }
 
+.team { position: relative; }
+
 .team .team-member:nth-of-type(even) .team-avatar { margin-left: auto; }
 
 .team .team-member:nth-of-type(even) .team-bio, .team .team-member:nth-of-type(even) .team-name { text-align: left; }
@@ -138,23 +140,9 @@ p { font-size: 4rem; color: #d74600; }
 
 .team .team-bio p { font-size: 2rem; font-weight: 200; color: #ffcbcb; }
 
-@media (min-width: 300px) and (max-width: 660px) { h1, .impact, .header .atf-content h2 { font-size: 3rem; } }
+.team .impact { position: relative; z-index: 1; }
 
-.shaka-container { text-align: right; transform: translateY(-50%); }
-
-.shaka { height: 500px; left: 0 !important; position: relative !important; }
-
-.intro video { height: 100%; width: 100%; object-fit: contain; }
-
-.scramble { margin-top: -200px; }
-
-.scramble p { font-weight: 200; }
-
-.scramble span { color: #6555ff; font-weight: 700; }
-
-.reel { background-color: #6555ff; }
-
-.reel iframe { width: 1000px; height: 700px; }
+.team::before { position: absolute; top: -100px; left: 0; content: ''; background: #6555ff; height: 300px; width: 100%; clip-path: ellipse(54% 48%); }
 
 .swiper-container { width: 100%; height: 100%; }
 
@@ -180,16 +168,28 @@ p { font-size: 4rem; color: #d74600; }
 
 .swiper-slide .portfolio-preview { width: 90%; }
 
+@media (min-width: 300px) and (max-width: 660px) { h1, .impact { font-size: 3rem; } .header .atf-content h2 { font-size: 7.5rem; } p, .tickers p { font-size: 2.7rem; } }
+
+.shaka-container { position: relative; text-align: right; transform: translateY(-50%); z-index: 99; }
+
+.shaka { height: 500px; left: 0 !important; position: relative !important; }
+
+.intro video { height: 100%; width: 100%; object-fit: contain; }
+
+.scramble { margin-top: -200px; position: relative; z-index: 100; }
+
+.scramble p { font-weight: 200; }
+
+.scramble span { color: #6555ff; font-weight: 700; }
+
+.reel { background-color: #6555ff; }
+
+.reel iframe { width: 1000px; height: 700px; }
+
 .tickers p { font-size: 3.2rem; letter-spacing: 2px; }
 
 .tickers p strong { color: #6555ff; }
 
 .waves-divider { fill: #6555ff; width: 100%; height: 152px; transform: rotate(180deg); margin-bottom: -7px; }
-
-.team { position: relative; }
-
-.team .impact { position: relative; z-index: 1; }
-
-.team::before { position: absolute; top: -100px; left: 0; content: ''; background: #6555ff; height: 300px; width: 100%; clip-path: ellipse(54% 48%); }
 
 /*# sourceMappingURL=main.css.map */

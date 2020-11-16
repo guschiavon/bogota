@@ -1,8 +1,13 @@
 @media (min-width: 300px) and (max-width: 660px) {
   h1,
-  .impact,
-  .header .atf-content h2  {
+  .impact  {
     font-size: 3rem;
   }
-  
+  .header .atf-content h2 {
+    font-size: 7.5rem;
+  }
+  p,
+  .tickers p {
+    font-size: 2.7rem;
+  }
 }
