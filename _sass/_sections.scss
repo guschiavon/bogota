@@ -1,0 +1,73 @@
+.shaka-container {
+  position: relative;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.shaka {
+  height: 500px;
+  left: 0 !important;
+  position: relative !important;
+  video {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.intro video {
+  height  : 100%;
+  width   : 100%;
+  object-fit: contain;
+}
+
+.scramble {
+  margin-top: -200px;
+  position: relative;
+  z-index: 100;
+  p {
+    font-weight: 200;
+  }
+  span {
+    color: $accent-color;
+    font-weight: 700;
+  }
+}
+
+.reel {
+  background-color: $accent-color;
+  iframe {
+    width: 1000px;
+    height: 700px;
+  }
+}
+
+
+.tickers p {
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  strong {
+    color: $accent-color;
+  }
+}
+.waves-divider {
+  fill: $accent-color;
+  width: 100%;
+  height: 152px; // Must be responsive
+  transform: rotate(180deg);
+  margin-bottom:-7px;
+}
+// .wave > use {
+//   animation: move-forever1 30s linear infinite;
+//   &:nth-child(1) {
+//     animation-delay: -2s;
+//   }
+// }
+// @keyframes move-forever1 {
+//   0% {
+//     transform: translate(85px, 0%);
+//   }
+//   100% {
+//     transform: translate(-90px, 0%);
+//   }
+// }
