@@ -94,7 +94,7 @@ gsap.to(bogotaBubble, {
     // markers: true,
     scrub: 0.3,
     anticipatePin: 1,
-    start: "top 25%",
+    start: "top 20%",
     end: "bottom 25%",
     toggleActions: "restart none reverse pause",
     pin: true,
@@ -111,9 +111,9 @@ gsap.to(menuNav, {
   scrollTrigger: {
     trigger: ".atf-content",
     
-    // markers: true,
+    markers: true,
     scrub: 0.3,
-    start: "top 25%",
+    start: "top 20%",
     end: "bottom 25%",
     toggleActions: "restart none reverse pause",
     pin: true,
