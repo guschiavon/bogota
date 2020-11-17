@@ -1,6 +1,6 @@
 ---
 ---
-
+@import "_mixins";
 // Main Stylesheet
 
 // Colors
@@ -21,7 +21,7 @@ $base-line-height : {{ site.data.settings.theme_settings.line_height_number }};
   "_resets",
   "_utility",
   "_universal",
-  "_mixins",
+  // "_mixins",
   "_buttons",
   "_nav",
   "_footer",

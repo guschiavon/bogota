@@ -67,7 +67,7 @@ gsap.to('.r-to-l', {
     trigger: ".tickers",
     toggleActions: "restart none reverse pause"
   },
-  x: 200,
+  x: 150,
   duration: 1,
 });
 gsap.to('.l-to-r', {
@@ -78,24 +78,28 @@ gsap.to('.l-to-r', {
     trigger: ".tickers",
     toggleActions: "restart none reverse pause"
   },
-  x: -200,
+  x: -150,
   duration: 1
 });
 
 // Above-the-fold items
 let bogotaBubble = CSSRulePlugin.getRule(".atf-content:before");
 let menuNav = CSSRulePlugin.getRule(".desktop-nav");
+
+  
 // Makes the bubble go to the outside left of screen
 gsap.to(bogotaBubble, {
   scrollTrigger: {
     trigger: ".atf-content",
     // markers: true,
     scrub: 0.3,
+    anticipatePin: 1,
     start: "top 25%",
-    end: "bottom 20%",
+    end: "bottom 25%",
     toggleActions: "restart none reverse pause",
     pin: true,
   },
+  // ease: "elastic.out(1, 0.3)",
   cssRule: {
     translateX: "-25%",
     height: 200,
@@ -106,16 +110,17 @@ gsap.to(bogotaBubble, {
 gsap.to(menuNav, {
   scrollTrigger: {
     trigger: ".atf-content",
+    
     // markers: true,
     scrub: 0.3,
     start: "top 25%",
-    end: "bottom 20%",
+    end: "bottom 25%",
     toggleActions: "restart none reverse pause",
     pin: true,
   },
+  // ease: "bounce",
   cssRule: {
-    translateX: "100%",
-    
+    translateX: "100%", 
   },
 });
 
@@ -124,10 +129,10 @@ let backButton = CSSRulePlugin.getRule(".back-to-top");
 gsap.to(backButton, {
   scrollTrigger: {
     // markers: true,
-    trigger: ".atf-content",
+    trigger: "#scramble",
     scrub: 0.3,
-    start: "top 25%",
-    end: "bottom 20%",
+    start: "top 90%",
+    end: "bottom 80%",
     toggleActions: "restart none reverse pause",
   },
   cssRule: {
