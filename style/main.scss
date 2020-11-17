@@ -62,19 +62,44 @@ $base-line-height : {{ site.data.settings.theme_settings.line_height_number }};
     z-index: 100001;    
   }
 }
-.tickers{
-  .r-to-l,
-  .l-to-r {
-    width: 80%;
-    margin: auto;
-  }
-  &> * {
-    width: 90%;
-    text-align: justify;
-    justify-content: space-between;
+.tickers {
+  .ticker-container {
+    list-style: none;
     display: flex;
-  }
+    flex-direction: row;
+    justify-content: space-between;
+    .ticker-element {
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+      text-transform: lowercase;
+      strong {
+        color: $accent-color;
+      }
+    }
+  } 
+  // .r-to-l,
+  // .l-to-r {
+  //   width: 80%;
+  //   margin: auto;
+  // }
+  // &> * {
+  //   width: 90%;
+  //   text-align: justify;
+  //   justify-content: space-between;
+  //   display: flex;
+  // }
 }
+// #ticker-container {
+//   animation: loop-anim 5s linear infinite;
+// }
 
+// @keyframes loop-anim {
+//     0% {
+//         margin-left: 0;
+//     }
+//     100% {
+//         margin-left: -50% /* This works because of the div between "outer" and "loop" */
+//     }
+// }
 
 
