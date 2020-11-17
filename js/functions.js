@@ -5,39 +5,49 @@ let lineTwoDefault = document.getElementById('line-2')
 let lineThreeDefault = document.getElementById('line-3')
 let lineFourDefault = document.getElementById('line-4')
 let lineFiveDefault = document.getElementById('line-5')
+let lineSixDefault = document.getElementById('line-6')
 
 const lineOneArray = [
-  'grupo de jovens',
-  'bando de loucos',
-  'coletivo de amigos',
-  'coletivo criativo',
-  'forno de pizza',
-  'terreiro'
+  'coletivo',
+  'bando',
+  'monastério',
+  'grupo musical',
+  'forno'
 ]
 const lineTwoArray = [
-  'pizza',
-  'animações e pós-produção',
-  'macumba',
-  'desenvolvimento de idéias'
+  'animação',
+  'publicidade',
+  'pós-produção',
+  'idéias',
+  'criatividade',
+  'pizzas'
 ]
 const lineThreeArray = [
-  'entre a cruz e a espada',
-  'no meio da pizzaria',
-  'no espaço sideral',
-  'em Curitiba'
+  'no Brasil',
+  'no multiverso',
+  'na quinta dimensão',
+  'em Atlantis, o continente perdido',
+  'na pizzaria'
 ]
 const lineFourArray = [
-  'ingredientes',
-  'sabores',
-  'tecnologias',
-  'influências',
-  'técnicas'
+  'substâncias',
+  'ritmos',
+  'cores',
+  'palavras',
+  'formas',
+  'orégano'
 ]
+
 const lineFiveArray = [
-  'de corpo e alma.',
-  'quentinha em casa.',
-  'algo digno de orgulho.',
-  'sangue suor e lágrimas.'
+  'o espaço',
+  'planetas',
+  'dimensões',
+  'hipóteses',
+  'azeitonas'
+]
+const lineSixArray = [
+  'pizza.'
+  
 ]
 // Generates a random index number from the array items
 const randomArrIndex = function(a) {
@@ -69,17 +79,19 @@ gsap.to('.r-to-l', {
   },
   x: 150,
   duration: 1,
+  
 });
-gsap.to('.l-to-r', {
+gsap.to(".l-to-r", {
   scrollTrigger: {
     // markers: true,
     scrub: 0.3,
     end: "bottom 10%",
     trigger: ".tickers",
-    toggleActions: "restart none reverse pause"
+    toggleActions: "restart none reverse pause",
   },
   x: -150,
-  duration: 1
+  duration: 1,
+  
 });
 
 // Above-the-fold items
