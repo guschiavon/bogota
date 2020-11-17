@@ -111,7 +111,7 @@ gsap.to(menuNav, {
   scrollTrigger: {
     trigger: ".atf-content",
     
-    markers: true,
+    // markers: true,
     scrub: 0.3,
     start: "top 20%",
     end: "bottom 25%",
