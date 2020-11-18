@@ -1,6 +1,7 @@
 .shaka-container {
   position: relative;
-  transform: translateY(-50%);
+  margin-top: -300px;
+  // transform: translateY(-50%);
   z-index: 99;
 }
 .shaka {
@@ -56,18 +57,4 @@
   height: 152px; // Must be responsive
   transform: rotate(180deg);
   margin-bottom:-7px;
-}
-// .wave > use {
-//   animation: move-forever1 30s linear infinite;
-//   &:nth-child(1) {
-//     animation-delay: -2s;
-//   }
-// }
-// @keyframes move-forever1 {
-//   0% {
-//     transform: translate(85px, 0%);
-//   }
-//   100% {
-//     transform: translate(-90px, 0%);
-//   }
-// }
+} 

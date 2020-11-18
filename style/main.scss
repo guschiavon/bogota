@@ -77,29 +77,4 @@ $base-line-height : {{ site.data.settings.theme_settings.line_height_number }};
       }
     }
   } 
-  // .r-to-l,
-  // .l-to-r {
-  //   width: 80%;
-  //   margin: auto;
-  // }
-  // &> * {
-  //   width: 90%;
-  //   text-align: justify;
-  //   justify-content: space-between;
-  //   display: flex;
-  // }
 }
-// #ticker-container {
-//   animation: loop-anim 5s linear infinite;
-// }
-
-// @keyframes loop-anim {
-//     0% {
-//         margin-left: 0;
-//     }
-//     100% {
-//         margin-left: -50% /* This works because of the div between "outer" and "loop" */
-//     }
-// }
-
-

@@ -71,149 +71,173 @@ const tickerTwo = document.getElementById('ticker-2');
 const tickerThree = document.getElementById('ticker-3');
 const tickerFour = document.getElementById('ticker-4');
 
-const appendContent = function(el) {
+// const appendContent = function(el) {
   
-}
+// }
 
 // console.log(appendTxt(tickerTwo));
 
 // ticker on scroll
-gsap.registerPlugin(ScrollTrigger, CSSRulePlugin, CSSPlugin);
+gsap.registerPlugin(ScrollTrigger, CSSRulePlugin);
 // Each of these tweens animates the lines by class right to left and left to right
-gsap.to('.r-to-l', {
-  scrollTrigger: {
-    scrub: 0.3,
-    end: "bottom 10%",
-    trigger: ".tickers",
-    toggleActions: "restart none reverse pause"
+const tlOne = gsap
+  .timeline({
+    scrollTrigger: {
+      scrub: 0.3,
+      end: "bottom 10%",
+      trigger: ".tickers",
+      toggleActions: "restart none reverse pause"
+    },
+  })
+  .to('.r-to-l', {
+    x: 150,
+    duration: 1,  
+  })
+  .to(".l-to-r", {
+    x: -150,
+    duration: 1,
   },
-  x: 150,
-  duration: 1,
-  
-});
-gsap.to(".l-to-r", {
-  scrollTrigger: {
-    scrub: 0.3,
-    end: "bottom 10%",
-    trigger: ".tickers",
-    toggleActions: "restart none reverse pause",
-  },
-  x: -150,
-  duration: 1,
-  
-});
+  "<"
+);
 
 // Above-the-fold items
 let bogotaBubble = CSSRulePlugin.getRule(".atf-content:before");
-let menuNav = CSSRulePlugin.getRule(".desktop-nav");
-let backButton = CSSRulePlugin.getRule(".back-to-top");
+let headerText = document.getElementById("header-content")
+let menuNav = document.getElementById("nav");
+let backButton = document.getElementById("back-to-top");
 
-  
-// Large screens (1440px to )
-ScrollTrigger.matchMedia({
-  "(min-width: 1440px)": function() {
-    // Makes the bubble go to the outside left of screen
-    gsap.to(bogotaBubble, {
-      scrollTrigger: {
-        trigger: ".atf-content",
-        // markers: true,
-        scrub: 0.3,
-        anticipatePin: 1,
-        start: "top 20%",
-        end: "bottom 25%",
-        toggleActions: "restart none reverse pause",
-        pin: true,
-      },
-      // ease: "elastic.out(1, 0.3)",
-      cssRule: {
-        translateX: "-25%",
-        height: 200,
-        width: 200,
-      },
-    });
-    // Makes the menu disappear to the right of the screen
-    gsap.to(menuNav, {
-      scrollTrigger: {
-        trigger: ".atf-content",
-        // markers: true,
-        scrub: 0.3,
-        start: "top 20%",
-        end: "bottom 25%",
-        toggleActions: "restart none reverse pause",
-        pin: true,
-      },
-      // ease: "bounce",
-      cssRule: {
-        translateX: "100%",
-      },
-    });
-    // Animation for the back-to-top button
-    gsap.to(backButton, {
-      scrollTrigger: {
-        // markers: true,
-        trigger: "#scramble",
-        scrub: 0.3,
-        start: "top 90%",
-        end: "bottom 80%",
-        toggleActions: "restart none reverse pause",
-      },
-      cssRule: {
-        translateY: "0",
-      },
-    });
-  },
-  "(min-width: 300px) and (max-width: 660px)": function() {
-    // Makes the bubble go to the outside left of screen
-    gsap.to(bogotaBubble, {
-      scrollTrigger: {
-        trigger: ".blue-divider",
-        markers: true,
-        scrub: 0.3,
-        anticipatePin: 1,
-        start: "top 10%",
-        endTrigger: ".small-divider",
-        end: "bottom 50%",
-        toggleActions: "restart none reverse pause",
-        // pin: true,
-      },
-      // ease: "elastic.out(1, 0.3)",
-      cssRule: {
-        translateX: "-50%",
-        height: 50,
-        width: 50,
-      },
-    });
-    // Makes the menu disappear to the right of the screen
-    gsap.to(menuNav, {
-      scrollTrigger: {
-        trigger: ".blue-divider",
-        markers: true,
-        scrub: 0.3,
-        start: "top 5%",
-        endTrigger: ".small-divider",
-        end: "bottom 300px",
-        toggleActions: "restart none reverse pause",
-        // pin: true,
-      },
-      // ease: "bounce",
-      cssRule: {
-        translateX: "100%",
-      },
-    });
-    // Animation for the back-to-top button
-    gsap.to(backButton, {
-      scrollTrigger: {
-        // markers: true,
-        trigger: "#scramble",
-        scrub: 0.3,
-        start: "top 90%",
-        end: "bottom 80%",
-        toggleActions: "restart none reverse pause",
-      },
-      cssRule: {
-        translateY: "0",
-      },
-    });
-  }
-});
+const tlTwo = gsap
+  .timeline({
+    scrollTrigger: {
+      // markers: true,
+      trigger: ".atf-content",
+      scrub: 0.2,
+      duration: 2,
+      // anticipatePin: 1,
+      start: "top 25%",
+      end: "bottom 35%",
+      toggleActions: "restart none reverse pause",
+      // pin: true,
+    },
+  });
+
+  tlTwo.to(bogotaBubble, {
+    cssRule: {
+      xPercent: 500,
+      height: 230,
+      width: 230
+    },
+  })
+  .to(menuNav, {
+    x: 500
+  }, "<")
+//  Large screens (1440px to )
+
+// Must adapt timeline for media queries
+// ScrollTrigger.matchMedia({
+//   "(min-width: 1440px)": function() {
+//     // Makes the bubble go to the outside left of screen
+//     gsap.to(bogotaBubble, {
+//       scrollTrigger: {
+//         trigger: ".atf-content",
+//         // markers: true,
+//         scrub: 0.3,
+//         anticipatePin: 1,
+//         start: "top 20%",
+//         end: "bottom 25%",
+//         toggleActions: "restart none reverse pause",
+//         pin: true,
+//       },
+//       // ease: "elastic.out(1, 0.3)",
+//       cssRule: {
+//         translateX: "-25%",
+//         height: 200,
+//         width: 200,
+//       },
+//     });
+//     // Makes the menu disappear to the right of the screen
+//     gsap.to(menuNav, {
+//       scrollTrigger: {
+//         trigger: ".atf-content",
+//         // markers: true,
+//         scrub: 0.3,
+//         start: "top 20%",
+//         end: "bottom 25%",
+//         toggleActions: "restart none reverse pause",
+//         pin: true,
+//       },
+//       // ease: "bounce",
+//       cssRule: {
+//         translateX: "100%",
+//       },
+//     });
+//     // Animation for the back-to-top button
+//     gsap.to(backButton, {
+//       scrollTrigger: {
+//         // markers: true,
+//         trigger: "#scramble",
+//         scrub: 0.3,
+//         start: "top 90%",
+//         end: "bottom 80%",
+//         toggleActions: "restart none reverse pause",
+//       },
+//       cssRule: {
+//         translateY: "0",
+//       },
+//     });
+//   },
+//   "(min-width: 300px) and (max-width: 660px)": function() {
+//     // Makes the bubble go to the outside left of screen
+//     gsap.to(bogotaBubble, {
+//       scrollTrigger: {
+//         trigger: ".blue-divider",
+//         markers: true,
+//         scrub: 0.3,
+//         anticipatePin: 1,
+//         start: "top 10%",
+//         endTrigger: ".small-divider",
+//         end: "bottom 50%",
+//         toggleActions: "restart none reverse pause",
+//         // pin: true,
+//       },
+//       // ease: "elastic.out(1, 0.3)",
+//       cssRule: {
+//         translateX: "-50%",
+//         height: 50,
+//         width: 50,
+//       },
+//     });
+//     // Makes the menu disappear to the right of the screen
+//     gsap.to(menuNav, {
+//       scrollTrigger: {
+//         trigger: ".blue-divider",
+//         markers: true,
+//         scrub: 0.3,
+//         start: "top 5%",
+//         endTrigger: ".small-divider",
+//         end: "bottom 300px",
+//         toggleActions: "restart none reverse pause",
+//         // pin: true,
+//       },
+//       // ease: "bounce",
+//       cssRule: {
+//         translateX: "100%",
+//       },
+//     });
+//     // Animation for the back-to-top button
+//     gsap.to(backButton, {
+//       scrollTrigger: {
+//         // markers: true,
+//         trigger: "#scramble",
+//         scrub: 0.3,
+//         start: "top 90%",
+//         end: "bottom 80%",
+//         toggleActions: "restart none reverse pause",
+//       },
+//       cssRule: {
+//         translateY: "0",
+//       },
+//     });
+//   }
+// });
   

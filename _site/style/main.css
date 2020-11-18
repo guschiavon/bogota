@@ -201,7 +201,7 @@ p { font-size: 4rem; color: #d74600; }
 
 .swiper-slide .portfolio-preview { width: 90%; }
 
-.shaka-container { position: relative; transform: translateY(-50%); z-index: 99; }
+.shaka-container { position: relative; margin-top: -300px; z-index: 99; }
 
 .shaka { height: 500px; left: 0 !important; position: relative !important; }
 
