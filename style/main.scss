@@ -29,6 +29,7 @@ $base-line-height : {{ site.data.settings.theme_settings.line_height_number }};
   "_team",
   "_sliders",
   "_sections",
+  "_tickers",
   "_media-queries";
 
 .back-to-top {
@@ -61,20 +62,4 @@ $base-line-height : {{ site.data.settings.theme_settings.line_height_number }};
     transform: translate(-50%, -50%);
     z-index: 100001;    
   }
-}
-.tickers {
-  .ticker-container {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    .ticker-element {
-      font-size: 3.5rem;
-      letter-spacing: 2px;
-      text-transform: lowercase;
-      strong {
-        color: $accent-color;
-      }
-    }
-  } 
 }

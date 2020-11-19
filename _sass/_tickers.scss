@@ -1,0 +1,16 @@
+.tickers {
+  .ticker-container {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .ticker-element {
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+      text-transform: lowercase;
+      strong {
+        color: $accent-color;
+      }
+    }
+  } 
+}

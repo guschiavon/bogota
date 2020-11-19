@@ -47,7 +47,6 @@ const lineFiveArray = [
 ]
 const lineSixArray = [
   'pizza.'
-  
 ]
 // Generates a random index number from the array items
 const randomArrIndex = function(a) {

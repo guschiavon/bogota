@@ -203,7 +203,7 @@ p { font-size: 4rem; color: #d74600; }
 
 .shaka-container { position: relative; margin-top: -300px; z-index: 99; }
 
-.shaka { height: 500px; left: 0 !important; position: relative !important; }
+.shaka { height: 500px; width: 500px; margin-right: 5rem; left: 0 !important; position: relative !important; }
 
 .shaka video { height: 100%; width: 100%; object-fit: contain; object-position: center; }
 
@@ -225,18 +225,24 @@ p { font-size: 4rem; color: #d74600; }
 
 .waves-divider { fill: #6555ff; width: 100%; height: 152px; transform: rotate(180deg); margin-bottom: -7px; }
 
+.tickers .ticker-container { list-style: none; display: flex; flex-direction: row; justify-content: space-between; }
+
+.tickers .ticker-container .ticker-element { font-size: 3.5rem; letter-spacing: 2px; text-transform: lowercase; }
+
+.tickers .ticker-container .ticker-element strong { color: #6555ff; }
+
 @media (min-width: 300px) and (max-width: 660px) { h1, .impact { font-size: 3rem; } .header { min-height: unset; height: 80vh; } .header .atf-content h2 { font-size: 4rem; } .header .atf-content small h2 { font-size: 2.3rem; text-indent: 2rem; } p, .tickers p { font-size: 2.2rem; } .atf-content::before { width: 300px; height: 300px; } .reel iframe { height: 200px; } .waves-divider { height: 32px; margin-bottom: -6px; } .footer .footer-contact h3, .footer .footer-contact a { font-size: 2rem; } .team::before { top: -50px; height: 100px; } .team .team-avatar { width: 300px; height: 300px; } .team .team-bio p { font-size: 1.6rem; } .desktop-nav .nav-link { font-size: 1rem; margin-bottom: 1rem; } .shaka { height: 220px; } .padding-y-md { padding-top: 2rem; padding-bottom: 2rem; } .logo-container img { width: 120px; } }
+
+@media (min-width: 1175px) and (max-width: 1440px) { .header .atf-content::before { height: 600px; width: 600px; } .header .atf-content h2 { font-size: 10rem; } .header .atf-content small h2 { font-size: 6rem; } .tickers .ticker-container .ticker-element { font-size: 2.5rem; } .scramble p { font-size: 2.9rem; } .waves-divider { height: 100px; margin-bottom: -4px; } .shaka { height: 370px; width: 370px; } .shaka-container { margin-top: -200px; } .impact { font-size: 8rem; } .team::before { height: 150px; } }
+
+@media (min-width: 1441px) and (max-width: 1600px) { .scramble p { font-size: 3.5rem; } .tickers .ticker-container .ticker-element { font-size: 3rem; } }
+
+@media (max-width: 1174px) { .header .atf-content::before { height: 550px; width: 550px; } .header .atf-content h2 { font-size: 8.5rem; } .header .atf-content small h2 { font-size: 5rem; } .shaka { height: 300px; width: 300px; } }
 
 .back-to-top { cursor: pointer; position: fixed; transform: translateY(250%); z-index: 10000; bottom: 2rem; right: 2rem; border: none; background-color: #d74600; width: 60px; height: 60px; border-radius: 50%; }
 
 .back-to-top::before { position: absolute; top: -2rem; left: 50%; transform: translateX(-50%); content: "topo"; }
 
 .back-to-top::after { content: "\261D"; font-size: 2rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100001; }
-
-.tickers .ticker-container { list-style: none; display: flex; flex-direction: row; justify-content: space-between; }
-
-.tickers .ticker-container .ticker-element { font-size: 3.5rem; letter-spacing: 2px; text-transform: lowercase; }
-
-.tickers .ticker-container .ticker-element strong { color: #6555ff; }
 
 /*# sourceMappingURL=main.css.map */
