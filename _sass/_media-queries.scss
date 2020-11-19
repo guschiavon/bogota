@@ -8,33 +8,43 @@
     height: 80vh;
     .atf-content {
       h2 {
-        font-size: 4rem;
+        font-size: 5rem;
       }
       small h2 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
         text-indent: 2rem;
+      }
+      &::before {
+        width: 200px;
+        height: 200px;
       }
     }
   }
   p,
-  .tickers p {
-    font-size: 2.2rem;
-  }
-  .atf-content::before {
-    width: 300px;
-    height: 300px;
+  .tickers .ticker-container .ticker-element {
+    font-size: 1.3rem;
+    letter-spacing: 0;
   }
   .reel iframe {
     height: 200px;
   }
   .waves-divider {
     height: 32px;
-    margin-bottom: -6px;
+    margin-bottom: -4px;
   }
-  .footer .footer-contact h3,
-  .footer .footer-contact a {
-    font-size: 2rem;
-  }
+  .footer {
+    .footer-contact {
+      padding: 2rem 0;
+      text-align: center;
+      h3,
+      a {
+        font-size: 2rem;
+      }
+    }
+    .flex-end {
+      justify-content: center;
+    }
+  } 
   .team {
     &::before {
       top: -50px;
@@ -43,10 +53,11 @@
     .team-avatar {
       width: 300px;
       height: 300px;
+      margin: auto;
     }
     .team-bio {
       p {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -59,14 +70,38 @@
   .shaka {
     height: 220px;
   }
+  .shaka-container {
+    margin-top: -120px;
+  }
   .padding-y-md {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+  .padding-x-lg {
+    padding-right: 3%;
+    padding-left: 3%;
+  }
   .logo-container img {
     width: 120px;
   }
+  .scramble {
+    margin-top: 0;
+    p {
+      font-size: 1.8rem;
+    }
+  }
+  .mobile-hide {
+    display: none;
+  }
+  .swiper-wrapper.padding-x-md {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
+
+// @media (min-width: 661px) {
+
+// }
 
 @media (min-width: 1175px) and (max-width: 1440px) {
   .header {
@@ -115,7 +150,7 @@
     font-size: 3rem;
   }
 }
-@media (max-width: 1174px) {
+@media (min-width: 768px) and (max-width: 1174px) {
   .header {
     .atf-content {
       &::before {

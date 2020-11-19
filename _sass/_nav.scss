@@ -58,6 +58,8 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  position: relative;
+  z-index: 100;
   .nav-link {
     cursor: pointer;
     text-transform: uppercase;

@@ -101,7 +101,7 @@ p, a, span, ol, ul, li, button, input, label, textarea, div, small, blockquote, 
 
 p { font-size: 4rem; color: #d74600; }
 
-.desktop-nav { padding: 3rem 0; display: flex; flex-direction: column; align-items: flex-end; justify-content: center; }
+.desktop-nav { padding: 3rem 0; display: flex; flex-direction: column; align-items: flex-end; justify-content: center; position: relative; z-index: 100; }
 
 .desktop-nav .nav-link { cursor: pointer; text-transform: uppercase; font-size: 1.5rem; writing-mode: vertical-rl; list-style: none; text-orientation: sideways-right; padding: 0.3rem 0; margin-bottom: 2rem; }
 
@@ -231,13 +231,13 @@ p { font-size: 4rem; color: #d74600; }
 
 .tickers .ticker-container .ticker-element strong { color: #6555ff; }
 
-@media (min-width: 300px) and (max-width: 660px) { h1, .impact { font-size: 3rem; } .header { min-height: unset; height: 80vh; } .header .atf-content h2 { font-size: 4rem; } .header .atf-content small h2 { font-size: 2.3rem; text-indent: 2rem; } p, .tickers p { font-size: 2.2rem; } .atf-content::before { width: 300px; height: 300px; } .reel iframe { height: 200px; } .waves-divider { height: 32px; margin-bottom: -6px; } .footer .footer-contact h3, .footer .footer-contact a { font-size: 2rem; } .team::before { top: -50px; height: 100px; } .team .team-avatar { width: 300px; height: 300px; } .team .team-bio p { font-size: 1.6rem; } .desktop-nav .nav-link { font-size: 1rem; margin-bottom: 1rem; } .shaka { height: 220px; } .padding-y-md { padding-top: 2rem; padding-bottom: 2rem; } .logo-container img { width: 120px; } }
+@media (min-width: 300px) and (max-width: 660px) { h1, .impact { font-size: 3rem; } .header { min-height: unset; height: 80vh; } .header .atf-content h2 { font-size: 5rem; } .header .atf-content small h2 { font-size: 2.5rem; text-indent: 2rem; } .header .atf-content::before { width: 200px; height: 200px; } p, .tickers .ticker-container .ticker-element { font-size: 1.3rem; letter-spacing: 0; } .reel iframe { height: 200px; } .waves-divider { height: 32px; margin-bottom: -4px; } .footer .footer-contact { padding: 2rem 0; text-align: center; } .footer .footer-contact h3, .footer .footer-contact a { font-size: 2rem; } .footer .flex-end { justify-content: center; } .team::before { top: -50px; height: 100px; } .team .team-avatar { width: 300px; height: 300px; margin: auto; } .team .team-bio p { font-size: 1.2rem; } .desktop-nav .nav-link { font-size: 1rem; margin-bottom: 1rem; } .shaka { height: 220px; } .shaka-container { margin-top: -120px; } .padding-y-md { padding-top: 2rem; padding-bottom: 2rem; } .padding-x-lg { padding-right: 3%; padding-left: 3%; } .logo-container img { width: 120px; } .scramble { margin-top: 0; } .scramble p { font-size: 1.8rem; } .mobile-hide { display: none; } .swiper-wrapper.padding-x-md { padding-left: 0; padding-right: 0; } }
 
 @media (min-width: 1175px) and (max-width: 1440px) { .header .atf-content::before { height: 600px; width: 600px; } .header .atf-content h2 { font-size: 10rem; } .header .atf-content small h2 { font-size: 6rem; } .tickers .ticker-container .ticker-element { font-size: 2.5rem; } .scramble p { font-size: 2.9rem; } .waves-divider { height: 100px; margin-bottom: -4px; } .shaka { height: 370px; width: 370px; } .shaka-container { margin-top: -200px; } .impact { font-size: 8rem; } .team::before { height: 150px; } }
 
 @media (min-width: 1441px) and (max-width: 1600px) { .scramble p { font-size: 3.5rem; } .tickers .ticker-container .ticker-element { font-size: 3rem; } }
 
-@media (max-width: 1174px) { .header .atf-content::before { height: 550px; width: 550px; } .header .atf-content h2 { font-size: 8.5rem; } .header .atf-content small h2 { font-size: 5rem; } .shaka { height: 300px; width: 300px; } }
+@media (min-width: 768px) and (max-width: 1174px) { .header .atf-content::before { height: 550px; width: 550px; } .header .atf-content h2 { font-size: 8.5rem; } .header .atf-content small h2 { font-size: 5rem; } .shaka { height: 300px; width: 300px; } }
 
 .back-to-top { cursor: pointer; position: fixed; transform: translateY(250%); z-index: 10000; bottom: 2rem; right: 2rem; border: none; background-color: #d74600; width: 60px; height: 60px; border-radius: 50%; }
 
