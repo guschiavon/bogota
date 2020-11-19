@@ -170,3 +170,75 @@
     width: 300px;
   }
 }
+
+@media (min-width: 2800px) {
+  .logo-container img {
+    width: 300px;
+  }
+  .desktop-nav .nav-link {
+    font-size: 2.5rem;
+  }
+  .header .atf-content {
+    &::before {
+      width: 1200px;
+      height: 1200px;
+    }
+    h2 {
+      font-size: 20rem;
+    }
+    small h2 {
+      font-size: 12rem;
+      text-indent: 6rem;
+    }
+  }
+  .scramble p {
+    font-size: 6.5rem;
+  }
+  .shaka {
+    width: 1000px;
+    height: 1000px;
+  }
+  .tickers .ticker-container .ticker-element {
+    font-size: 5.5rem;
+  }
+  .team {
+    .team-avatar {
+      width: 600px;
+      height: 600px;
+      &::before {
+        top: -8rem;
+        left: -8rem;
+      }
+    }
+    .team-member:nth-of-type(even) {
+      .team-avatar::before {
+        bottom: -8rem;
+        right: -8rem;
+        top: unset;
+        left: unset;
+      }
+    }
+    .team-name {
+      font-size: 4.5rem;
+    }
+    .team-bio p {
+      font-size: 3rem;
+    }
+  }
+  .reel iframe {
+    width: 1600px;
+    height: 900px;
+  }
+  .swiper-slide {
+    .portfolio-subtitle {
+      font-size: 3rem;
+    }
+    .portfolio-title {
+      font-size: 3.5rem;
+    }
+    .portfolio-category {
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
