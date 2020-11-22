@@ -116,7 +116,7 @@ equipe:
   </p> -->
 </section>
 <section id="portfolio" class="portfolio padding-y-md padding-x-lg text-center bg-pink">
-  <h2 class="impact editable">
+  <h2 class="impact mb-4 editable">
     Trabalhos_
   </h2>
     <div class="swiper-container">
@@ -155,7 +155,10 @@ equipe:
     <div class="team-member grid-noGutter{% cycle '', '-reverse' %} padding-x-lg padding-y-md">
       <div class="col-6_md-12-middle">
         <div class="team-avatar">
-          <img src="{{member.avatar_image}}" class="responsive-img" alt="{{member.alt_text}}" />
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="team-avatar-halo">
+              <circle cx="50" cy="50" r="50"/>
+          </svg>
+          <img src="{{member.avatar_image}}" class="responsive-img team-avatar-image" alt="{{member.alt_text}}" />
         </div>
       </div>
       <div class="col-6_md-12-middle team-bio">

@@ -9,11 +9,13 @@
       .team-name {
         text-align: left;
       }
-      .team-avatar::before {
-        bottom: -4rem;
-        right: -4rem;
-        top: unset;
-        left: unset;
+      .team-avatar {
+        svg {
+          bottom: -2rem;
+          right: -2rem;
+          top: unset;
+          left: unset;
+        }
       }
     }
   }
@@ -25,14 +27,15 @@
     img {
       position: relative;
     }
-    &::before {
+    svg {
       position: absolute;
-      top: -4rem;
-      left: -4rem;
+      top: -6rem;
+      left: -6rem;
       content:"";
       height: inherit;
       width: inherit;
       border: 4px solid $secondary-color;
+      fill: none;
       border-radius: 100%;
       z-index: 0;
     }

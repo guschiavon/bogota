@@ -161,13 +161,13 @@ p { font-size: 4rem; color: #d74600; }
 
 .team .team-member:nth-of-type(even) .team-bio, .team .team-member:nth-of-type(even) .team-name { text-align: left; }
 
-.team .team-member:nth-of-type(even) .team-avatar::before { bottom: -4rem; right: -4rem; top: unset; left: unset; }
+.team .team-member:nth-of-type(even) .team-avatar svg { bottom: -2rem; right: -2rem; top: unset; left: unset; }
 
 .team .team-avatar { position: relative; height: 400px; width: 400px; }
 
 .team .team-avatar img { position: relative; }
 
-.team .team-avatar::before { position: absolute; top: -4rem; left: -4rem; content: ""; height: inherit; width: inherit; border: 4px solid #ffcbcb; border-radius: 100%; z-index: 0; }
+.team .team-avatar svg { position: absolute; top: -6rem; left: -6rem; content: ""; height: inherit; width: inherit; border: 4px solid #ffcbcb; fill: none; border-radius: 100%; z-index: 0; }
 
 .team .team-name { text-transform: uppercase; color: #ffcbcb; font-size: 2.5rem; }
 
@@ -239,7 +239,7 @@ p { font-size: 4rem; color: #d74600; }
 
 @media (min-width: 768px) and (max-width: 1174px) { .header .atf-content::before { height: 550px; width: 550px; } .header .atf-content h2 { font-size: 8.5rem; } .header .atf-content small h2 { font-size: 5rem; } .shaka { height: 300px; width: 300px; } }
 
-@media (min-width: 2800px) { .logo-container img { width: 300px; } .desktop-nav .nav-link { font-size: 2.5rem; } .header .atf-content::before { width: 1200px; height: 1200px; } .header .atf-content h2 { font-size: 20rem; } .header .atf-content small h2 { font-size: 12rem; text-indent: 6rem; } .scramble p { font-size: 6.5rem; } .shaka { width: 1000px; height: 1000px; } .tickers .ticker-container .ticker-element { font-size: 5.5rem; } .team .team-avatar { width: 600px; height: 600px; } .team .team-avatar::before { top: -8rem; left: -8rem; } .team .team-member:nth-of-type(even) .team-avatar::before { bottom: -8rem; right: -8rem; top: unset; left: unset; } .team .team-name { font-size: 4.5rem; } .team .team-bio p { font-size: 3rem; } .reel iframe { width: 1600px; height: 900px; } .swiper-slide .portfolio-subtitle { font-size: 3rem; } .swiper-slide .portfolio-title { font-size: 3.5rem; } .swiper-slide .portfolio-category { font-size: 2rem; margin-right: 0.5rem; } }
+@media (min-width: 2160px) { .impact { font-size: 20rem; } .logo-container img { width: 300px; } .desktop-nav .nav-link { font-size: 2.5rem; } .header .atf-content::before { width: 1200px; height: 1200px; } .header .atf-content h2 { font-size: 20rem; } .header .atf-content small h2 { font-size: 12rem; text-indent: 6rem; } .scramble p { font-size: 7rem; } .shaka { width: 1000px; height: 1000px; } .tickers .ticker-container .ticker-element { font-size: 7rem; } .team .team-avatar { width: 800px; height: 800px; } .team .team-avatar::before { top: -8rem; left: -8rem; } .team .team-member:nth-of-type(even) .team-avatar::before { bottom: -8rem; right: -8rem; top: unset; left: unset; } .team .team-name { font-size: 4.5rem; } .team .team-bio p { font-size: 3rem; } .reel iframe { width: 1600px; height: 900px; } .swiper-slide .portfolio-subtitle { font-size: 3rem; } .swiper-slide .portfolio-title { font-size: 3.5rem; } .swiper-slide .portfolio-category { font-size: 2rem; margin-right: 0.5rem; } .footer .footer-contact a, .footer .footer-contact h3 { font-size: 4.5rem; } .footer .footer-social-link svg { width: 85px; } }
 
 .back-to-top { cursor: pointer; position: fixed; transform: translateY(250%); z-index: 10000; bottom: 2rem; right: 2rem; border: none; background-color: #d74600; width: 60px; height: 60px; border-radius: 50%; }
 

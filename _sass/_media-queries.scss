@@ -171,7 +171,10 @@
   }
 }
 
-@media (min-width: 2800px) {
+@media (min-width: 2160px) {
+  .impact {
+    font-size: 20rem;
+  }
   .logo-container img {
     width: 300px;
   }
@@ -192,19 +195,19 @@
     }
   }
   .scramble p {
-    font-size: 6.5rem;
+    font-size: 7rem;
   }
   .shaka {
     width: 1000px;
     height: 1000px;
   }
   .tickers .ticker-container .ticker-element {
-    font-size: 5.5rem;
+    font-size: 7rem;
   }
   .team {
     .team-avatar {
-      width: 600px;
-      height: 600px;
+      width: 800px;
+      height: 800px;
       &::before {
         top: -8rem;
         left: -8rem;
@@ -239,6 +242,19 @@
     .portfolio-category {
       font-size: 2rem;
       margin-right: 0.5rem;
+    }
+  }
+  .footer {
+    .footer-contact {
+      a,
+      h3 {
+        font-size: 4.5rem;
+      }
+    }
+    .footer-social-link {
+      svg {
+        width: 85px;
+      }
     }
   }
 }

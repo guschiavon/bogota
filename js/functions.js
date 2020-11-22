@@ -1,5 +1,5 @@
-gsap.registerPlugin(ScrollTrigger, CSSRulePlugin, TextPlugin, MotionPathPlugin);
 
+gsap.registerPlugin(ScrollTrigger, CSSRulePlugin, TextPlugin, MotionPathPlugin);
 // Scramble words 
 // How to put this on a JSON file for easier UI?
 const scrambleEls = [
@@ -90,18 +90,13 @@ const defaultText = function (el) {
 };
 // takes the default text content (o) and the array (a) as attributes and sets the textContent of the DOM element
 const setString = function(o, a) {
-  o.textContent = randomString(a)
-  gsap.from(o, {   
-    duration: 1,
+  o.textContent = " " // sets the content to empty
+  gsap.to(o, {   
+    duration: 0.75,
     text: {
-      value: randomString(a),
-      padSpace: true,
+      value: randomString(a), // replaces the content with a random string
     },
-    ease: "power2"
-  }).to(o, {
-    text: {
-      value: ""
-    }
+    ease: "none"
   })
 }
 
@@ -174,3 +169,25 @@ const tlTwo = gsap
   .to(menuNav, {
     x: 500
   }, "<");
+
+  const halo = document.getElementsByClassName('team-avatar-halo');
+  // const halo = CSSRulePlugin.getRule('.team-avatar::before')
+ gsap.set(halo, {
+   transformOrigin: "50% 50%",
+ });
+  const tlThree = gsap.timeline({
+    scrollTrigger: {
+      markers: true,
+      trigger: "#team",
+      start: "top 80%",
+      toggleActions: "restart none reverse pause",
+      scrub: true
+    }
+  });
+
+  tlThree.to(halo, {
+    motionPath: {
+      path: "M25,50a25,25 0 1,0 50,0a25,25 0 1,0 -50,0",
+      duration: 1000,
+    },
+  });
