@@ -1,4 +1,4 @@
-@media (min-width: 300px) and (max-width: 660px) {
+@media (min-width: 300px) and (max-width: 320px) {
   h1,
   .impact {
     font-size: 3rem;
@@ -8,15 +8,137 @@
     height: 80vh;
     .atf-content {
       h2 {
-        font-size: 5rem;
+        font-size: 3.5rem;
+      }
+      small h2 {
+        font-size: 2rem;
+        text-indent: 2rem;
+      }
+      &::before {
+        width: 230px;
+        height: 230px;
+        top: -2rem;
+      }
+    }
+  }
+  p,
+  .tickers .ticker-container .ticker-element {
+    font-size: 1.3rem;
+    letter-spacing: 0;
+  }
+  .reel iframe {
+    height: 200px;
+    width: 100%;
+  }
+  .waves-divider {
+    height: 32px;
+    margin-bottom: -4px;
+  }
+  .footer {
+    .footer-contact {
+      padding: 2rem 0;
+      text-align: center;
+      h3,
+      a {
+        font-size: 2rem;
+      }
+    }
+    .flex-end {
+      justify-content: center;
+    }
+  } 
+  .team {
+    .team-member:nth-of-type(even) {
+      .team-avatar {
+        svg {
+          bottom: -1rem;
+          right: -1rem;
+        }
+      }
+    }
+    &::before {
+      top: -50px;
+      height: 100px;
+    }
+    .team-avatar {
+      width: 270px;
+      height: 270px;
+      margin: auto;
+      
+        svg {
+          top: -1rem;
+          left: -1rem;
+        }
+      }
+    
+    .team-bio {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    .team-name {
+      font-size: 2rem;
+    }
+  }
+  .desktop-nav {
+    .nav-link {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .shaka {
+    height: 250px;
+    margin-right: unset;
+  }
+  .shaka-container {
+    margin-top: -60px;
+  }
+  .padding-y-md {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .padding-x-lg {
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+  .logo-container img {
+    width: 120px;
+  }
+  .scramble {
+    margin-top: 0;
+    p {
+      font-size: 1.7rem;
+    }
+  }
+  .mobile-hide {
+    display: none;
+  }
+  .swiper-wrapper.padding-x-md {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 660px) {
+  h1,
+  .impact {
+    font-size: 3rem;
+  }
+  .header {
+    min-height: unset;
+    height: 80vh;
+    .atf-content {
+      h2 {
+        font-size: 4.5rem;
       }
       small h2 {
         font-size: 2.5rem;
         text-indent: 2rem;
       }
       &::before {
-        width: 200px;
-        height: 200px;
+        width: 230px;
+        height: 230px;
+        top: -1rem;
       }
     }
   }
@@ -38,7 +160,7 @@
       text-align: center;
       h3,
       a {
-        font-size: 2rem;
+        font-size: 1.7rem;
       }
     }
     .flex-end {
@@ -68,7 +190,8 @@
     }
   }
   .shaka {
-    height: 220px;
+    height: 300px;
+    margin-right: unset;
   }
   .shaka-container {
     margin-top: -120px;
@@ -129,8 +252,8 @@
     margin-bottom: -4px;
   }
   .shaka {
-    height: 370px;
-    width: 370px;
+    height: 500px;
+    width: 500px;
   }
   .shaka-container {
     margin-top: -200px;
@@ -154,8 +277,8 @@
   .header {
     .atf-content {
       &::before {
-        height: 550px;
-        width: 550px;
+        height: 450px;
+        width: 450px;
       }
       h2 {
         font-size: 8.5rem;
@@ -166,8 +289,18 @@
     }
   }
   .shaka {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
+  }
+  .scramble p {
+    font-size: 2.5rem;
+  }
+  .tickers {
+    .ticker-container {
+      .ticker-element {
+        font-size: 2.5rem;
+      }
+    }
   }
 }
 

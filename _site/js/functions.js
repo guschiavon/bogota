@@ -78,14 +78,6 @@ const randomString = function(a) {
 }
 // renders the default text declared on the data-default-text HTML attribute
 const defaultText = function (el) {
-  // gsap.from(el, {
-  //   duration: 1,
-  //   text: {
-  //     value: ""
-  //   },
-  //   ease: "none",
-  //   start: ""
-  // });
   el.textContent = el.dataset.defaultText;
 };
 // takes the default text content (o) and the array (a) as attributes and sets the textContent of the DOM element
@@ -96,7 +88,8 @@ const setString = function(o, a) {
     text: {
       value: randomString(a), // replaces the content with a random string
     },
-    ease: "none"
+    ease: "none",
+    
   })
 }
 
