@@ -176,6 +176,10 @@
       width: 300px;
       height: 300px;
       margin: auto;
+      svg {
+        top: -3rem;
+        left: -3rem;
+      }
     }
     .team-bio {
       p {
@@ -222,9 +226,6 @@
   }
 }
 
-// @media (min-width: 661px) {
-
-// }
 
 @media (min-width: 1175px) and (max-width: 1440px) {
   .header {
