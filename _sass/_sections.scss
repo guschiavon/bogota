@@ -5,11 +5,12 @@
   z-index: 99;
 }
 .shaka {
-  height: 500px;
-  width: 500px;
+  height: 700px;
+  width: 700px;
   margin-right: 5rem;
   left: 0 !important;
   position: relative !important;
+  z-index: -1;
   video {
     height: 100%;
     width: 100%;

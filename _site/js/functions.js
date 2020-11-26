@@ -106,10 +106,11 @@ const scrambleText = function (o, a) {
   o.addEventListener('mouseover', function() {
     setString(o, a)
   })
-  o.addEventListener('mouseleave', function() {
-    defaultText(o)
+  o.addEventListener('mouseleave', function () {
+    defaultText(o);
   });
 };
+
 
 // call the function to iterate on the array
 scrambleEls.forEach(function (el) {
@@ -154,16 +155,16 @@ const tlTwo = gsap
       scrub: 0.2,
       duration: 4,
       start: "top 25%",
-      end: "bottom 35%",
+      end: "bottom -30%",
       toggleActions: "restart none reverse pause",
     },
   });
 
   tlTwo.to(bogotaBubble, {
     cssRule: {
-      xPercent: 500,
-      height: 230,
-      width: 230
+      xPercent: 100,
+      // height: 230,
+      // width: 230
     },
   })
   .to(menuNav, {
@@ -172,22 +173,25 @@ const tlTwo = gsap
 
   const halo = document.getElementsByClassName('team-avatar-halo');
   // const halo = CSSRulePlugin.getRule('.team-avatar::before')
- gsap.set(halo, {
-   transformOrigin: "50% 50%",
- });
+//  gsap.set(halo, {
+//    transformOrigin: "50% 50%",
+//  });
   const tlThree = gsap.timeline({
+    repeat: 5,
     scrollTrigger: {
-      markers: true,
+      // markers: true,
       trigger: "#team",
       start: "top 80%",
+      end: "bottom 60%",
       toggleActions: "restart none reverse pause",
       scrub: true
     }
   });
 
   tlThree.to(halo, {
+    // duration: 20,
+    // ease: "none",
     motionPath: {
-      path: "M25,50a25,25 0 1,0 50,0a25,25 0 1,0 -50,0",
-      duration: 1000,
+      path: "M-30,0a30,30 0 1,0 60,0a30,30 0 1,0 -60,0",
     },
-  });
+  })

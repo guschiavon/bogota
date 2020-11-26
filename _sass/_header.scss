@@ -16,6 +16,7 @@
   top: 50%;
   width: 60%;
   transform: translateY(-50%);
+  z-index: 100;
   h2 {
     color: $primary-color;
     font-size: 12rem;
@@ -36,11 +37,11 @@
   &::before {
     position: absolute;
     left: -25%;
-    top: -20%;
+    top: -50px;
     content: '';
     background: $secondary-color;
     border-radius: 100%;
-    $diameter: 750px;
+    $diameter: 670px;
     height: $diameter;
     width: $diameter;
     z-index: -1;

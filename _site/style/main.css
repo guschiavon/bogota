@@ -143,7 +143,7 @@ p { font-size: 4rem; color: #d74600; }
 
 .blue-divider { height: 3px; background-color: #6555ff; border: none; }
 
-.header .atf-content { position: absolute; top: 50%; width: 60%; transform: translateY(-50%); }
+.header .atf-content { position: absolute; top: 50%; width: 60%; transform: translateY(-50%); z-index: 100; }
 
 .header .atf-content h2 { color: #d74600; font-size: 12rem; line-height: 1; }
 
@@ -153,7 +153,7 @@ p { font-size: 4rem; color: #d74600; }
 
 .atf-content { position: relative; }
 
-.atf-content::before { position: absolute; left: -25%; top: -20%; content: ''; background: #ffcbcb; border-radius: 100%; height: 750px; width: 750px; z-index: -1; }
+.atf-content::before { position: absolute; left: -25%; top: -50px; content: ''; background: #ffcbcb; border-radius: 100%; height: 670px; width: 670px; z-index: -1; }
 
 .team { position: relative; }
 
@@ -161,7 +161,7 @@ p { font-size: 4rem; color: #d74600; }
 
 .team .team-member:nth-of-type(even) .team-bio, .team .team-member:nth-of-type(even) .team-name { text-align: left; }
 
-.team .team-member:nth-of-type(even) .team-avatar svg { bottom: -2rem; right: -2rem; top: unset; left: unset; }
+.team .team-member:nth-of-type(even) .team-avatar svg { bottom: -4rem; right: -4rem; top: unset; left: unset; }
 
 .team .team-avatar { position: relative; height: 400px; width: 400px; }
 
@@ -197,13 +197,11 @@ p { font-size: 4rem; color: #d74600; }
 
 .swiper-slide .clickable-image { border: 2px solid #6555ff; }
 
-.swiper-slide .slide-frame { border: 2px solid #6555ff; }
-
-.swiper-slide .portfolio-preview { width: 90%; }
+.swiper-slide .portfolio-preview { width: 100%; }
 
 .shaka-container { position: relative; margin-top: -300px; z-index: 99; }
 
-.shaka { height: 500px; width: 500px; margin-right: 5rem; left: 0 !important; position: relative !important; }
+.shaka { height: 700px; width: 700px; margin-right: 5rem; left: 0 !important; position: relative !important; z-index: -1; }
 
 .shaka video { height: 100%; width: 100%; object-fit: contain; object-position: center; }
 
