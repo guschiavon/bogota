@@ -76,13 +76,12 @@ const randomArrIndex = function(a) {
 const randomString = function(a) {
   return a[randomArrIndex(a)]
 }
-// renders the default text declared on the data-default-text HTML attribute
+// renders the default text declared on the array
 const defaultText = function (el) {
-  el.textContent = el.dataset.defaultText;
+  el.textContent = el.defaultString;
 };
 // takes the default text content (o) and the array (a) as attributes and sets the textContent of the DOM element
 const setString = function (o, a) {
-  o.textContent = " "; // sets the content to empty
   gsap.to(o, {
     duration: 0.55,
     text: {
@@ -91,11 +90,12 @@ const setString = function (o, a) {
     ease: "none",
   });
   gsap.from(o, {
-    delay: 2,
-    text: {
-      value: defaultText(o),
-    },
-  });
+      delay: 2,
+      text: {
+        value: defaultText(a),
+      },
+    });
+  
 };
 
 
@@ -104,6 +104,7 @@ const scrambleText = function (o, a) {
   o.addEventListener('mouseover', function() {
     setString(o, a)
   })
+  
 };
 
 
