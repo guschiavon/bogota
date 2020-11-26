@@ -217,6 +217,14 @@ p { font-size: 4rem; color: #d74600; }
 
 .reel iframe { width: 1000px; height: 700px; }
 
+.reel.flex-center { flex-direction: column; }
+
+.reel .reel-title { text-transform: uppercase; color: #ffcbcb; position: relative; }
+
+.reel .reel-arrow { margin-bottom: none; }
+
+.reel .reel-arrow:after { content: "\2193"; font-size: 2rem; color: #ffcbcb; }
+
 .tickers p { font-size: 3.2rem; letter-spacing: 2px; }
 
 .tickers p strong { color: #6555ff; }

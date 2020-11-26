@@ -163,8 +163,6 @@ const tlTwo = gsap
   tlTwo.to(bogotaBubble, {
     cssRule: {
       xPercent: 100,
-      // height: 230,
-      // width: 230
     },
   })
   .to(menuNav, {
@@ -172,10 +170,6 @@ const tlTwo = gsap
   }, "<");
 
   const halo = document.getElementsByClassName('team-avatar-halo');
-  // const halo = CSSRulePlugin.getRule('.team-avatar::before')
-//  gsap.set(halo, {
-//    transformOrigin: "50% 50%",
-//  });
   const tlThree = gsap.timeline({
     repeat: 5,
     scrollTrigger: {
@@ -189,9 +183,14 @@ const tlTwo = gsap
   });
 
   tlThree.to(halo, {
-    // duration: 20,
-    // ease: "none",
     motionPath: {
       path: "M-30,0a30,30 0 1,0 60,0a30,30 0 1,0 -60,0",
     },
-  })
+  });
+
+  const arrow = document.getElementById("arrow")
+  const tlArrow = gsap.timeline ({
+    duration: 0.1,
+    repeat: -1
+  });
+  tlArrow.from(arrow,{y: 8}).to(arrow,{y: 8})

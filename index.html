@@ -4,21 +4,30 @@ _home: true
 reel_principal_url: 'https://player.vimeo.com/video/383154335'
 equipe:
   - nome: Caja Guedes
-    avatar_image: /assets/images/cajaa.png
-    alt_text: Caja Guedes Bogotá
-    bio_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem ut libero optio beatae explicabo sint eum unde quisquam molestiae!
+    avatar_image: /assets/images/caja1.jpg
+    alt_text: Caja Guedes Bogotá Estúdio de Animação
+    bio_text: Fundador e Diretor
+    pizza: Quatro Queijos
   - nome: Denise Azzi
-    avatar_image: /assets/images/denise.png
-    alt_text: Caja Guedes Bogotá
-    bio_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem ut libero optio beatae explicabo sint eum unde quisquam molestiae!
+    avatar_image: /assets/images/de1.jpg
+    alt_text: Denise Azzi Bogotá Estúdio de Motion Design
+    bio_text: Fundadora e Motion Designer
+    pizza: Marguerita
   - nome: Tiago Bahia
-    avatar_image: /assets/images/bahia.png
-    alt_text: Caja Guedes Bogotá
-    bio_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem ut libero optio beatae explicabo sint eum unde quisquam molestiae!
+    avatar_image: /assets/images/ba1.jpg
+    alt_text: Tiago Bahia Bogotá Estúdio de Animação 3D
+    bio_text: Motion Designer e 3D generalista
+    pizza: Pepperoni com Cebola
   - nome: Gessica Secchi
-    avatar_image: /assets/images/gessica.png
-    alt_text: Caja Guedes Bogotá
-    bio_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem ut libero optio beatae explicabo sint eum unde quisquam molestiae!
+    avatar_image: /assets/images/ge1.jpg
+    alt_text: Gessica Secchi Bogotá Estúdio de Ilustração e Animação
+    bio_text: Motion Designer e Ilustradora
+    pizza: Calabresa
+  - nome: Luiz Brito
+    avatar_image: /assets/images/lu1.jpg
+    alt_text: Luiz Brito Bogotá Estúdio de Produção e Animação
+    bio_text: Atendimento e Produção Executiva
+    pizza: Chocolate
 ---
 
 <header id="header" class="header padding-x-lg padding-y-md">
@@ -66,6 +75,8 @@ equipe:
 </div>
 
 <section id="reel" class="reel flex-center padding-y-lg">
+  <h3 class="reel-title">Assista o nosso reel</h3>
+  <span id="arrow" class="reel-arrow"></span>
   <iframe title="vimeo-player" src="{{page.reel_principal_url}}" frameborder="0" allowfullscreen></iframe>
 </section>
 
@@ -165,6 +176,9 @@ equipe:
         <h3 class="team-name">{{member.nome}}</h3>
         <p>
           {{member.bio_text}}
+        </p>
+        <p>
+          Pizza favorita: {{member.pizza}}
         </p>
       </div>
     </div>
