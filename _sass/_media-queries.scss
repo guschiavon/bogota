@@ -1,7 +1,7 @@
 @media (min-width: 300px) and (max-width: 320px) {
   h1,
   .impact {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .header {
     min-height: unset;
@@ -35,6 +35,7 @@
     margin-bottom: -4px;
   }
   .footer {
+    text-align: center;
     .footer-contact {
       padding: 2rem 0;
       text-align: center;
@@ -48,6 +49,13 @@
     }
   } 
   .team {
+    .team-member,
+    .team-member:nth-of-type(even) {
+      .team-bio,
+      .team-name {
+        text-align: center;
+      }
+    }
     .team-member:nth-of-type(even) {
       .team-avatar {
         svg {
@@ -117,12 +125,15 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .portfolio-container {
+    text-align: center;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 660px) {
   h1,
   .impact {
-    font-size: 3rem;
+    font-size: 3.8rem;
   }
   .header {
     min-height: unset;
@@ -155,6 +166,7 @@
     margin-bottom: -4px;
   }
   .footer {
+    text-align: center;
     .footer-contact {
       padding: 2rem 0;
       text-align: center;
@@ -168,6 +180,13 @@
     }
   } 
   .team {
+    .team-member,
+    .team-member:nth-of-type(even) {
+      .team-bio,
+      .team-name {
+        text-align: center;
+      }
+    }
     &::before {
       top: -50px;
       height: 100px;
@@ -223,6 +242,9 @@
   .swiper-wrapper.padding-x-md {
     padding-left: 0;
     padding-right: 0;
+  }
+  .portfolio-container {
+    text-align: center;
   }
 }
 
