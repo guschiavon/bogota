@@ -2,6 +2,36 @@
 layout: default
 _home: true
 reel_principal_url: 'https://player.vimeo.com/video/383154335'
+servicos:
+  - id: ticker-1
+    conteudo:
+      - text_html: <strong>Animação</strong>
+      - text_html: motion
+      - text_html: 3D
+      - text_html: 2D
+      - text_html: vfx
+      - text_html: direção criativa
+      - text_html: ilustração
+  - id: ticker-2
+    conteudo:
+      - text_html: storyboard
+      - text_html: direção de arte
+      - text_html: <strong>publicidade</strong>
+      - text_html: frame-a-frame
+  - id: ticker-3
+    conteudo:
+      - text_html: roteiro
+      - text_html: <strong>pós-produção</strong>
+      - text_html: edição
+      - text_html: composition
+      - text_html: coordenação
+  - id: ticker-4
+    conteudo:
+      - text_html: color-grading
+      - text_html: finalização
+      - text_html: projetos
+      - text_html: <strong>idéias</strong>
+      - text_html: e mucho más
 equipe:
   - nome: Caja Guedes
     avatar_image: /assets/images/caja1.jpg
@@ -81,48 +111,15 @@ equipe:
 </section>
 
 <section id="tickers" class="tickers bg-pink padding-y-md padding-x-sm">
-    <ul id="ticker-1" class="ticker-container r-to-l">
-      <li class="ticker-element editable"><strong>Animação.</strong></li>
-      <li class="ticker-element editable">Motion.</li>
-      <li class="ticker-element editable">2d.</li>
-      <li class="ticker-element editable">3d.</li>
-      <li class="ticker-element editable">vfx.</li>
-      <li class="ticker-element editable">direção criativa.</li>
-      <li class="ticker-element editable">ilustração.</li>
-    </ul>
-    <ul id="ticker-2" class="l-to-r ticker-container">
-      <li class="ticker-element editable">storyboard.</li>
-      <li class="ticker-element editable">direção de arte.</li>
-      <li class="ticker-element editable"><strong>publicidade.</strong></li>
-      <li class="ticker-element editable">frame-a-frame.</li>
-    </ul>
-    <ul id="ticker-3" class="r-to-l ticker-container">
-      <li class="ticker-element editable">roteiro.</li>
-      <li class="ticker-element editable"><strong>pós-produção.</strong></li>
-      <li class="ticker-element editable">edição.</li>
-      <li class="ticker-element editable">composition.</li>
-      <li class="ticker-element editable">coordenação.</li>
-    </ul>
-    <ul id="ticker-4" class="l-to-r ticker-container">
-      <li class="ticker-element editable">color grading.</li>
-      <li class="ticker-element editable">finalização.</li>
-      <li class="ticker-element editable">projetos.</li>
-      <li class="ticker-element editable"><strong>idéias.</strong></li>
-      <li class="ticker-element editable">e mucho más.</li>
-    </ul>
-  
-  <!-- <p class="editable r-to-l">
-    <strong>anima&ccedil;&atilde;o.&nbsp;</strong> motion. 2d. 3d. vfx. dire&ccedil;&atilde;o criativa. ilustra&ccedil;&atilde;o.
-  </p>
-  <p class="editable l-to-r">
-    storyboard. dire&ccedil;&atilde;o de arte. <strong>publicidade. </strong>frame-a-frame.
-  </p>
-  <p class="editable r-to-l">
-    roteiro. <strong>p&oacute;s-produ&ccedil;&atilde;o.&nbsp;</strong>edi&ccedil;&atilde;o. composition. coordena&ccedil;&atilde;o.
-  </p>
-  <p class="editable l-to-r">
-    color grading. finaliza&ccedil;&atilde;o. projetos. <strong>id&eacute;ias.</strong> e mucho m&aacute;s.
-  </p> -->
+  <div class="mobile-hide">
+    {% for servico in page.servicos %}
+      <ul id="{{servico.id}}" class="ticker-container {% cycle 'r-to-l', 'l-to-r' %}">
+        {% for palavra in servico.conteudo %}
+        <li class="ticker-element">{{palavra.text_html}}.</li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
 </section>
 <section id="portfolio" class="portfolio padding-y-md padding-x-lg text-center bg-pink">
   <h2 class="impact mb-4 editable">

@@ -81,17 +81,22 @@ const defaultText = function (el) {
   el.textContent = el.dataset.defaultText;
 };
 // takes the default text content (o) and the array (a) as attributes and sets the textContent of the DOM element
-const setString = function(o, a) {
-  o.textContent = " " // sets the content to empty
+const setString = function (o, a) {
+  o.textContent = " "; // sets the content to empty
   gsap.to(o, {
     duration: 0.55,
     text: {
       value: randomString(a), // replaces the content with a random string
     },
     ease: "none",
-    onComplete: defaultText(o),
   });
-}
+  gsap.from(o, {
+    delay: 2,
+    text: {
+      value: defaultText(o),
+    },
+  });
+};
 
 
 // mouse events
@@ -99,9 +104,6 @@ const scrambleText = function (o, a) {
   o.addEventListener('mouseover', function() {
     setString(o, a)
   })
-  o.addEventListener('mouseleave', function () {
-    defaultText(o);
-  });
 };
 
 

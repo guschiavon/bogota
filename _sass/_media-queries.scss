@@ -26,6 +26,9 @@
     font-size: 1.3rem;
     letter-spacing: 0;
   }
+  .tickers .ticker-container {
+    flex-direction: column;
+  }
   .reel iframe {
     height: 200px;
     width: 100%;
@@ -41,8 +44,12 @@
       text-align: center;
       h3,
       a {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
+    }
+    .footer-social-link {
+      margin-left: 0;
+      margin: 0 0.5rem;
     }
     .flex-end {
       justify-content: center;
@@ -158,6 +165,9 @@
     font-size: 1.3rem;
     letter-spacing: 0;
   }
+  .tickers .ticker-container {
+    flex-direction: column;
+  }
   .reel iframe {
     height: 200px;
   }
@@ -174,6 +184,10 @@
       a {
         font-size: 1.7rem;
       }
+    }
+    .footer-social-link {
+      margin-left: 0;
+      margin: 0 0.5rem;
     }
     .flex-end {
       justify-content: center;
@@ -233,7 +247,7 @@
   .scramble {
     margin-top: 0;
     p {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
   }
   .mobile-hide {
