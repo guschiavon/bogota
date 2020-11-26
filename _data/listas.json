@@ -7,12 +7,12 @@
   "line-2": {
     "id": "line-2",
     "defaultString": "imagens em movimento",
-    "array": ["animação","publicidade","pós-produção","idéias","criatividade","pizzas"],
+    "array": ["animação","publicidade","pós-produção","idéias","criatividade","pizzas"]
   },
   "line-3": {
     "id": "line-3",
     "defaultString": "no meio de tudo e mais",
-    "array": ["no Brasil","no multiverso","na quinta dimensão","em Atlantis, o continente perdido","na pizzaria"],
+    "array": ["no Brasil","no multiverso","na quinta dimensão","em Atlantis, o continente perdido","na pizzaria"]
   },
   "line-4": {
     "id": "line-4",

@@ -83,14 +83,14 @@ const defaultText = function (el) {
 // takes the default text content (o) and the array (a) as attributes and sets the textContent of the DOM element
 const setString = function(o, a) {
   o.textContent = " " // sets the content to empty
-  gsap.to(o, {   
-    duration: 0.75,
+  gsap.to(o, {
+    duration: 0.55,
     text: {
       value: randomString(a), // replaces the content with a random string
     },
     ease: "none",
-    
-  })
+    onComplete: defaultText(o),
+  });
 }
 
 
@@ -184,6 +184,7 @@ const tlTwo = gsap
   const arrow = document.getElementById("arrow")
   const tlArrow = gsap.timeline ({
     duration: 0.1,
-    repeat: -1
+    repeat: -1,
+    yoyo: true
   });
-  tlArrow.from(arrow,{y: 8}).to(arrow,{y: 8})
+  tlArrow.from(arrow,{y: 8})
