@@ -5,33 +5,33 @@ reel_principal_url: 'https://player.vimeo.com/video/383154335'
 servicos:
   - id: ticker-1
     conteudo:
-      - text_html: <strong>Animação</strong>
-      - text_html: motion
-      - text_html: 3D
-      - text_html: 2D
-      - text_html: vfx
-      - text_html: direção criativa
-      - text_html: ilustração
+      - text_html: <strong>Animação.</strong>
+      - text_html: motion.
+      - text_html: 3D.
+      - text_html: 2D.
+      - text_html: vfx.
+      - text_html: direção criativa.
+      - text_html: ilustração.
   - id: ticker-2
     conteudo:
-      - text_html: storyboard
-      - text_html: direção de arte
-      - text_html: <strong>publicidade</strong>
-      - text_html: frame-a-frame
+      - text_html: storyboard.
+      - text_html: direção de arte.
+      - text_html: <strong>publicidade.</strong>
+      - text_html: frame-a-frame.
   - id: ticker-3
     conteudo:
-      - text_html: roteiro
-      - text_html: <strong>pós-produção</strong>
-      - text_html: edição
-      - text_html: composition
-      - text_html: coordenação
+      - text_html: roteiro.
+      - text_html: <strong>pós-produção.</strong>
+      - text_html: edição.
+      - text_html: composition.
+      - text_html: coordenação.
   - id: ticker-4
     conteudo:
-      - text_html: color-grading
-      - text_html: finalização
-      - text_html: projetos
-      - text_html: <strong>idéias</strong>
-      - text_html: e mucho más
+      - text_html: color-grading.
+      - text_html: finalização.
+      - text_html: projetos.
+      - text_html: <strong>idéias.</strong>
+      - text_html: e mucho más.
 equipe:
   - nome: Caja Guedes
     avatar_image: /assets/images/caja1.jpg
@@ -71,7 +71,7 @@ equipe:
     <small><h2>Somos a</h2></small>
     <h2><span>Bogot&aacute;.</span></h2>
   </div>
-  <nav id="nav" class="desktop-nav">
+  <nav id="nav" class="desktop-nav mobile-hide">
     <ul>
       <li class="nav-link"><a href="/">Bogotá</a></li>
       <li class="nav-link"><a href="#reel">Reel</a></li>
@@ -80,7 +80,6 @@ equipe:
       <li class="nav-link"><a href="#footer">Contato</a></li>
     </ul>
   </nav>
-  <a href="#header" id="back-to-top" class="back-to-top"></a>
 </header>
 <section class="shaka-container padding-x-lg flex-end">
   <div class="shaka">
@@ -99,7 +98,7 @@ equipe:
   <svg preserveaspectratio="none" viewbox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" class="waves-divider">
     <path d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" />
     <g class="wave">
-   <use xlink:href="#gentle-wave" x="50" y="3" />
+   <!-- <use xlink:href="#gentle-wave" x="50" y="3" /> -->
   </g>
   </svg>
 </div>
@@ -115,7 +114,7 @@ equipe:
     {% for servico in page.servicos %}
       <ul id="{{servico.id}}" class="ticker-container {% cycle 'r-to-l', 'l-to-r' %}">
         {% for palavra in servico.conteudo %}
-        <li class="ticker-element">{{palavra.text_html}}.</li>
+        <li class="ticker-element">{{palavra.text_html}}</li>
         {% endfor %}
       </ul>
     {% endfor %}

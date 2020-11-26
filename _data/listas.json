@@ -2,27 +2,40 @@
   "line-1": {
     "id": "line-1",
     "defaultString": "estúdio",
-    "array": ["coletivo","bando","monastério","grupo musical","forno"]
+    "array": ["coletivo", "bando", "monastério", "grupo musical", "forno"]
   },
   "line-2": {
     "id": "line-2",
     "defaultString": "imagens em movimento",
-    "array": ["animação","publicidade","pós-produção","idéias","criatividade","pizzas"]
+    "array": [
+      "animação",
+      "publicidade",
+      "pós-produção",
+      "idéias",
+      "criatividade",
+      "pizzas"
+    ]
   },
   "line-3": {
     "id": "line-3",
     "defaultString": "no meio de tudo e mais",
-    "array": ["no Brasil","no multiverso","na quinta dimensão","em Atlantis, o continente perdido","na pizzaria"]
+    "array": [
+      "no Brasil",
+      "no multiverso",
+      "na quinta dimensão",
+      "em Atlantis, o continente perdido",
+      "na pizzaria"
+    ]
   },
   "line-4": {
     "id": "line-4",
     "defaultString": "linguagens",
-    "array": ["substâncias","ritmos","cores","palavras","formas","orégano"]
+    "array": ["substâncias", "ritmos", "cores", "palavras", "formas", "orégano"]
   },
   "line-5": {
     "id": "line-5",
     "defaultString": "caminhos",
-    "array": ["o espaço","planetas","dimensões","hipóteses","azeitonas"]
+    "array": ["o espaço", "planetas", "dimensões", "hipóteses", "azeitonas"]
   },
   "line-6": {
     "id": "line-6",
