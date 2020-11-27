@@ -138,6 +138,23 @@ const tlOne = gsap
   },
   "<"
 );
+const highlight = document.querySelectorAll(".mobile-show .ticker-element strong");
+const tlMobile = gsap
+  .timeline({
+    scrollTrigger: {
+      markers: true,
+      scrub: 0.3,
+      start: "top 80%",
+      end: "bottom",
+      trigger: highlight,
+      toggleActions: "restart none reverse pause",
+    },
+  })
+  .to(highlight, {
+    stagger: 0.1,
+    fontWeight: 700,
+    color: "#6555ff",
+  });
 
 // Above-the-fold items
 const bogotaBubble = CSSRulePlugin.getRule(".atf-content:before");

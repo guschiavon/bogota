@@ -14,3 +14,16 @@
     }
   } 
 }
+
+.mobile-show {
+  text-align: justify;
+  .ticker-element {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      text-transform: lowercase;
+      // margin: 0 0.5rem; 
+      strong {
+        font-weight: inherit;
+      }
+    }
+}

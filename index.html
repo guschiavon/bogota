@@ -119,6 +119,13 @@ equipe:
       </ul>
     {% endfor %}
   </div>
+  <div class="mobile-show">
+    {% for servico in page.servicos %}
+    {% for palavra in servico.conteudo %}
+    <span class="ticker-element">{{palavra.text_html}}</span>
+    {% endfor %}
+    {% endfor %}
+  </div>
 </section>
 <section id="portfolio" class="portfolio padding-y-md padding-x-lg text-center bg-pink">
   <h2 class="impact mb-4 editable">
