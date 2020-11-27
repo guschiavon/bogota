@@ -80,21 +80,24 @@ const randomString = function(a) {
 const defaultText = function (el) {
   el.textContent = el.defaultString;
 };
+
 // takes the default text content (o) and the array (a) as attributes and sets the textContent of the DOM element
 const setString = function (o, a) {
   gsap.to(o, {
-    duration: 0.55,
+    duration: 0.75,
     text: {
       value: randomString(a), // replaces the content with a random string
     },
     ease: "none",
+    opacity: 1
   });
   gsap.from(o, {
-      delay: 2,
-      text: {
-        value: defaultText(a),
-      },
-    });
+    delay: 2,
+    text: {
+      value: o.textContent,
+    },
+    opacity: 0
+  });
   
 };
 
@@ -104,7 +107,6 @@ const scrambleText = function (o, a) {
   o.addEventListener('mouseover', function() {
     setString(o, a)
   })
-  
 };
 
 
