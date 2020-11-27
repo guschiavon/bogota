@@ -92,7 +92,7 @@ const setString = function (o, a) {
     opacity: 1
   });
   gsap.from(o, {
-    delay: 2,
+    delay: 1.2,
     text: {
       value: o.textContent,
     },
