@@ -26,8 +26,16 @@
     font-size: 1.3rem;
     letter-spacing: 0;
   }
-  .tickers .ticker-container {
-    flex-direction: column;
+  .tickers {
+    .ticker-container {
+     flex-direction: column;
+    }
+  }
+  .mobile-show {
+    text-align: center; 
+    .ticker-element {
+      font-size: 1.6rem;
+    }
   }
   .reel iframe {
     height: 200px;
@@ -128,6 +136,16 @@
   .mobile-hide {
     display: none;
   }
+  .swiper-slide {
+    .portfolio-category {
+      font-size: 0.9rem;
+      padding: 0.5rem 0.8rem;
+    }
+    .portfolio-title {
+      font-size: 1.7rem;
+
+    }
+  }
   .swiper-wrapper.padding-x-md {
     padding-left: 0;
     padding-right: 0;
@@ -167,6 +185,12 @@
   }
   .tickers .ticker-container {
     flex-direction: column;
+  }
+  .mobile-show {
+    text-align: center; 
+    .ticker-element {
+      font-size: 2.1rem;
+    }
   }
   .reel iframe {
     height: 200px;
