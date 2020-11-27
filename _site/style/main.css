@@ -197,7 +197,7 @@ p { font-size: 4rem; color: #d74600; }
 
 .swiper-slide .portfolio-title, .swiper-slide .portfolio-subtitle { display: block; }
 
-.swiper-slide .portfolio-category { font-size: 1.2rem; padding: 0.6rem 1.2rem; border-radius: 5px; background-color: #6555ff; color: #ffcbcb; }
+.swiper-slide .portfolio-category { font-size: 1.2rem; padding: 0.6rem 1.2rem; border-radius: 5px; background-color: #6555ff; color: #ffcbcb; display: inline-block; margin-bottom: 0.3rem; }
 
 .swiper-slide .clickable-image { border: 2px solid #6555ff; }
 

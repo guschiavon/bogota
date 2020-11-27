@@ -38,6 +38,8 @@
     border-radius: 5px;
     background-color: $accent-color;
     color: $secondary-color;
+    display: inline-block;
+    margin-bottom: 0.3rem;
   }
   .clickable-image {
     border: 2px solid $accent-color;
