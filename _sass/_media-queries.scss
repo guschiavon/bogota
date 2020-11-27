@@ -165,8 +165,9 @@
     min-height: unset;
     height: 80vh;
     .atf-content {
-      h2 {
-        font-size: 4.5rem;
+      h2,
+      h1 {
+        font-size: 5rem;
       }
       small h2 {
         font-size: 2.5rem;
