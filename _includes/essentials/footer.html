@@ -13,7 +13,7 @@
   <div class="col-6_md-12-middle flex-end">
     <div class="footer-social">
       {% for item in site.data.settings.general.social %}
-      <a href="{{item.url}}" class="footer-social-link">{% include essentials/social-icons.html icon=item.icon %}</a>
+      <a href="{{item.url}}" class="footer-social-link" target="_blank">{% include essentials/social-icons.html icon=item.icon %}</a>
       {% endfor %}
     </div>
 
