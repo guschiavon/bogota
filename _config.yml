@@ -10,6 +10,17 @@ collections:
   portfolios:
     output: true
 
+plugins:
+  - jekyll-webp
+  - jekyll-sitemap
+
+webp:
+  enabled: true
+  quality: 75
+  img_dir: ["/assets/images"]
+  nested: true
+  regenerate: false
+
 icons:
   - "Facebook"
   - "Messenger"

@@ -7,5 +7,5 @@ source 'https://rubygems.org'
     # gem 'jekyll-feed'
     # gem 'jekyll-responsive-image', '~>1.5'
     # gem 'jekyll-archives', '2.2.1'
-    # gem 'jekyll-webp', '1.0.0'
+    gem 'jekyll-webp', '1.0.0'
   end
