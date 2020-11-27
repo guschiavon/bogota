@@ -142,7 +142,7 @@ const highlight = document.querySelectorAll(".mobile-show .ticker-element strong
 const tlMobile = gsap
   .timeline({
     scrollTrigger: {
-      markers: true,
+      // markers: true,
       scrub: 0.3,
       start: "top 80%",
       end: "bottom",
@@ -151,7 +151,7 @@ const tlMobile = gsap
     },
   })
   .to(highlight, {
-    stagger: 0.1,
+    stagger: 0.2,
     fontWeight: 700,
     color: "#6555ff",
   });

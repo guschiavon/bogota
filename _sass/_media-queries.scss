@@ -33,6 +33,7 @@
   }
   .mobile-show {
     text-align: center; 
+    display: block;
     .ticker-element {
       font-size: 1.6rem;
     }
@@ -187,6 +188,7 @@
     flex-direction: column;
   }
   .mobile-show {
+    display: block;
     text-align: center; 
     .ticker-element {
       font-size: 2.1rem;
