@@ -1,13 +1,19 @@
 .team {
    position: relative;
+   $axis: 500px;
+   .team-bio {
+        width: $axis;
+        margin: auto;
+      }
   .team-member {
     &:nth-of-type(even) {
       .team-avatar {
         margin-left: auto;
       }
+      
       .team-bio,
       .team-name {
-        text-align: left;
+        text-align: right;
       }
       .team-avatar {
         svg {
@@ -21,9 +27,9 @@
   }
   .team-avatar {
     position: relative;
-    $axis: 400px;
     height: $axis;
     width: $axis;
+    margin: auto;
     img {
       position: relative;
     }

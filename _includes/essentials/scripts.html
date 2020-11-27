@@ -33,43 +33,43 @@
 
   {% if page._home %}
   
-   <script>
-    // Shaka Animation
-      const intro = document.querySelector('.shaka');
-      const video = intro.querySelector('video');
-      const text = intro.querySelector('h1');
+  <script>
+  // Shaka Animation
+    const intro = document.querySelector('.shaka');
+    const video = intro.querySelector('video');
+    const text = intro.querySelector('h1');
 
-      // SCROLL MAGIC
+    // SCROLL MAGIC
 
-      const controller = new ScrollMagic.Controller();
+    const controller = new ScrollMagic.Controller();
 
-      // Scenes
-      const scene = new ScrollMagic.Scene({
-        duration: 0,
-        triggerElement: intro,
-        triggerHook: 0,
-        
-      })
-      // .addIndicators()
-      // .setPin(intro)
-      .addTo(controller);
+    // Scenes
+    const scene = new ScrollMagic.Scene({
+      duration: 0,
+      triggerElement: intro,
+      triggerHook: 0,
+      
+    })
+    // .addIndicators()
+    // .setPin(intro)
+    .addTo(controller);
 
-      // Video Animation
+    // Video Animation
 
-      let accelamount = 0.5;
-      let scrollpos = 0;
-      let delay = 0;
+    let accelamount = 0.5;
+    let scrollpos = 0;
+    let delay = 0;
 
-      scene.on('update', e => {
-        scrollpos = e.scrollPos / 1000;
-      });
+    scene.on('update', e => {
+      scrollpos = e.scrollPos / 1000;
+    });
 
-      setInterval(() => {
-        delay += (scrollpos - delay) * accelamount;
-        video.currentTime = delay;
-      }, 24);
-  </script>
-  {% endif %}
+    setInterval(() => {
+      delay += (scrollpos - delay) * accelamount;
+      video.currentTime = delay;
+    }, 24);
+</script>
+{% endif %}
 
 
 

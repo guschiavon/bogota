@@ -1,7 +1,7 @@
 
 gsap.registerPlugin(ScrollTrigger, CSSRulePlugin, TextPlugin, MotionPathPlugin);
+
 // Scramble words 
-// How to put this on a JSON file for easier UI?
 const scrambleEls = [
   {
     id: "line-1",
@@ -94,11 +94,10 @@ const setString = function (o, a) {
   gsap.from(o, {
     delay: 1.2,
     text: {
-      value: o.textContent,
+      value: o.dataset.defaultText,
     },
-    opacity: 0
+    opacity: 0,
   });
-  
 };
 
 
