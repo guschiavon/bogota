@@ -1,23 +1,21 @@
 general:
-  site_url:
+  site_url: 'https://somosbogota.tv'
   address:
   email: 'ola@somosbogota.tv'
-  phone: '+55 (41) 9999-99999'
+  phone: '+55 (11) 99594-8693'
   social:
     - icon: "Instagram"
-      url: 'https://instagram.com/'
+      url: 'https://www.instagram.com/somosbogota.tv/'
     - icon: "Vimeo"
-      url: 'https://vimeo.com/'
+      url: 'https://vimeo.com/somosbogota'
     - icon: "Facebook"
-      url: 'https://facebook.com/'
-    - icon: "LinkedIn"
-      url: 'https://linkedin.com/'
+      url: 'https://www.facebook.com/somosbogota.tv'
     
 branding:
   site_title: Bogotá
   nav_logo_image: /assets/graphics/logo-main-fill.svg
   footer_logo_image: /assets/graphics/logo-outline-alt.svg
-  preview_image:
+  preview_image: /assets/images/preview-image.jpg
 theme_settings:
   primary_color: '#d74600'
   secondary_color: '#ffcbcb'

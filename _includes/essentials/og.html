@@ -3,9 +3,9 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.data.settings.branding.site_title }}{% endif %}">
 <meta property="og:url" content="{{site.data.settings.general.site_url}}{{ page.url }}">
-<meta property="og:image" content="{% if page.preview_image %}{{site.data.settings.general.site_url}}/{{page.preview_image}} {% else %}{{site.data.settings.general.site_url}}/{{ site.data.settings.branding.preview_image }}{% endif %}" />
-<meta property="og:image:url" content="{% if page.preview_image %}{{site.data.settings.general.site_url}}/{{page.preview_image}} {% else %}{{site.data.settings.general.site_url}}/{{ site.data.settings.branding.preview_image }}{% endif %}" />
-<meta property="og:image:secure_url" content="{% if page.preview_image %}{{site.data.settings.general.site_url}}/{{page.preview_image}} {% else %}{{site.data.settings.general.site_url}}/{{ site.data.settings.branding.preview_image }}{% endif %}" />
+<meta property="og:image" content="{% if page.preview_image != nil %}{{site.data.settings.general.site_url}}{{page.preview_image}} {% else %}{{site.data.settings.general.site_url}}{{ site.data.settings.branding.preview_image }}{% endif %}" />
+<meta property="og:image:url" content="{% if page.preview_image != nil %}{{site.data.settings.general.site_url}}{{page.preview_image}} {% else %}{{site.data.settings.general.site_url}}{{ site.data.settings.branding.preview_image }}{% endif %}" />
+<meta property="og:image:secure_url" content="{% if page.preview_image != nil %}{{site.data.settings.general.site_url}}{{page.preview_image}} {% else %}{{site.data.settings.general.site_url}}{{ site.data.settings.branding.preview_image }}{% endif %}" />
 <meta property="og:image:type" content="image/jpg" />
 <meta property="og:image:width" content="600" />
 <meta property="og:image:alt" content="{{page.preview_image_alt_text}}" />
