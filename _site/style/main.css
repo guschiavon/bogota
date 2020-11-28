@@ -103,7 +103,7 @@ p, a, span, ol, ul, li, button, input, label, textarea, div, small, blockquote, 
 
 p { font-size: 4rem; color: #d74600; }
 
-canvas { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); max-width: 100vw; max-height: 100vh; }
+canvas { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
 
 .desktop-nav { padding: 3rem 0; display: flex; flex-direction: column; align-items: flex-end; justify-content: center; position: relative; z-index: 100; }
 

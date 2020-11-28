@@ -236,7 +236,7 @@ const tlTwo = gsap
     frame: frameCount - 1,
     snap: "frame",
     scrollTrigger: {
-      markers: true,
+      // markers: true,
       trigger: ".atf-content",
       duration: 1,
       scrub: 0.5,
