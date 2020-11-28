@@ -17,7 +17,7 @@ plugins:
 webp:
   enabled: true
   quality: 75
-  img_dir: ["/assets/images"]
+  img_dir: ["/assets/images", "/assets/stopmotion"]
   nested: true
   regenerate: false
 
