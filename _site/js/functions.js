@@ -215,7 +215,7 @@ const tlTwo = gsap
   const context = canvas.getContext("2d");
 
   canvas.width = 1158;
-  canvas.height = 770;
+  canvas.height = 800;
 
   const frameCount = 40;
   const currentFrame = (index) =>
