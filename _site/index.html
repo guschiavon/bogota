@@ -77,7 +77,8 @@
 </header>
 <section class="shaka-container padding-x-lg flex-end">
   <div class="shaka">
-    <video id="shaka" src="/assets/maozinha-original.mp4" type="video/mp4" playsinline="true"></video>
+    <canvas id="shaka"></canvas>
+    <!-- <video id="shaka" src="/assets/maozinha-original.mp4" type="video/mp4" playsinline="true"></video> -->
   </div>
 </section>
 <main>
@@ -716,7 +717,7 @@ setTimeout(function () {
 
 </script>   -->
 
-  <script>
+  <!-- <script>
   // Shaka Animation
     const intro = document.querySelector('.shaka');
     const video = intro.querySelector('video');
@@ -751,7 +752,7 @@ setTimeout(function () {
       delay += (scrollpos - delay) * accelamount;
       video.currentTime = delay;
     }, 24);
-</script>
+</script> -->
 
 
 
