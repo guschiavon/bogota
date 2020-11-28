@@ -1,5 +1,6 @@
 ---
 layout: portfolios
+index: 
 title:
 thumb_image:
 video_url:

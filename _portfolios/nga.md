@@ -1,5 +1,6 @@
 ---
 layout: portfolios
+index: 4
 title: Lost&Found
 thumb_image: /assets/images/placeholder-3.png
 video_url: 'https://player.vimeo.com/video/383154335'

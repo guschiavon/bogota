@@ -135,7 +135,8 @@ equipe:
     </h2>
       <div class="swiper-container">
         <div class="swiper-wrapper padding-x-md">
-          {% for portfolio in site.portfolios %}
+          {% assign portfolios = site.portfolios | sort: 'index' %}
+          {% for portfolio in portfolios %}
           <div class="swiper-slide">
             <div class="grid-noGutter-spaceAround-equalHeight">
               <div class="col-5_md-12-middle slide-frame flex-center">

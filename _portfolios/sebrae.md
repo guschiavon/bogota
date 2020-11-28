@@ -1,5 +1,6 @@
 ---
 layout: portfolios
+index: 1
 title: Compre do Pequeno
 thumb_image: /assets/images/placeholder-5.png
 video_url: 'https://player.vimeo.com/video/460707024'
