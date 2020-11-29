@@ -299,13 +299,30 @@
   }
 }
 @media (min-width: 661px) and (max-width: 767px) {
+  .shaka {
+    height: 500px;
+  }
+  #shaka {
+    width: 420px;
+  }
   .header {
     .atf-content {
       h1,
       h2 {
-        font-size: 8rem;
+        font-size: 6rem;
+      }
+      small h2 {
+        font-size: 3.5rem;
+      }
+      &::before {
+        width: 330px;
+        height: 330px;
       }
     }
+  }
+  .reel iframe {
+    width: 95%;
+    margin: auto;
   }
   .scramble {
     margin-top: -100px;
@@ -318,9 +335,16 @@
     margin-bottom: -4px;
   }
 }
-
+@media (min-width: 768px) and (max-width: 1174px) {
+  #shaka {
+    width: 480px;
+  }
+}
 
 @media (min-width: 1175px) and (max-width: 1440px) {
+  #shaka {
+    width: 750px;
+  }
   .header {
     .atf-content {
       &::before {
