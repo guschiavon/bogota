@@ -259,6 +259,11 @@
       margin-bottom: 1rem;
     }
   }
+  #shaka {
+    height: 300px;
+    right: 0;
+    left: unset;
+  }
   .shaka {
     height: 300px;
     margin-right: unset;
@@ -337,13 +342,13 @@
 }
 @media (min-width: 768px) and (max-width: 1174px) {
   #shaka {
-    width: 480px;
+    height: 450px;
   }
 }
 
 @media (min-width: 1175px) and (max-width: 1440px) {
   #shaka {
-    width: 750px;
+    height: 500px;
   }
   .header {
     .atf-content {
@@ -393,6 +398,8 @@
 }
 @media (min-width: 768px) and (max-width: 1174px) {
   .header {
+    min-height: 1000px;
+    height: unset;
     .atf-content {
       &::before {
         height: 450px;
@@ -419,7 +426,7 @@
     }
   }
   .shaka {
-    height: 400px;
+    height: 450px;
     width: 400px;
   }
   .scramble {
@@ -493,9 +500,15 @@
   .scramble p {
     font-size: 7rem;
   }
+  #shaka {
+    height: inherit;
+  }
+  .shaka-container {
+    margin-top: -400px;
+  }
   .shaka {
-    width: 1000px;
-    height: 1000px;
+    width: 1300px;
+    height: 1300px;
   }
   .tickers .ticker-container .ticker-element {
     font-size: 4.8rem;
@@ -556,7 +569,7 @@
 }
 @media (min-width: 3100px) {
   .tickers .ticker-container .ticker-element {
-    font-size: 7rem;
+    font-size: 8rem;
   }
   .swiper-slide {
     .portfolio-title {
@@ -569,4 +582,8 @@
   .portfolio {
     height: 1440px;
   }
+  .scramble p {
+    font-size: 10rem;
+  }
+
 }

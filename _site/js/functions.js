@@ -213,9 +213,9 @@ const tlTwo = gsap
   // Animate image on scroll
   const canvas = document.getElementById("shaka");
   const context = canvas.getContext("2d");
-
-  canvas.width = 1158;
-  canvas.height = 800;
+  
+  canvas.width = 1200;
+  canvas.height = 1350;
 
   const frameCount = 40;
   const currentFrame = (index) =>
