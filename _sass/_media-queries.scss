@@ -387,6 +387,26 @@
   .team::before {
     height: 150px;
   }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .team-avatar {
+    width: 430px !important;
+    height: 430px !important;
+  }
+  .team {
+    .team-member:nth-of-type(even),
+    .team-member {
+      .team-bio {
+        padding: 0 2rem;
+        width: 430px;
+        p {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 1441px) and (max-width: 1600px) {
   .scramble p {
