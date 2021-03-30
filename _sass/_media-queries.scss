@@ -506,17 +506,17 @@
   }
   .header .atf-content {
     &::before {
-      width: 1200px;
-      height: 1200px;
+      width: 1000px;
+      height: 1000px;
     }
     h1, h2 {
-      font-size: 25rem;
+      font-size: 18rem;
     }
     small h2 {
-      font-size: 12rem;
+      font-size: 10rem;
       text-indent: 6rem;
     }
-  }
+  }  
   .scramble p {
     font-size: 7rem;
   }
@@ -524,19 +524,19 @@
     height: inherit;
   }
   .shaka-container {
-    margin-top: -400px;
+    margin-top: -200px;
   }
   .shaka {
     width: 1300px;
     height: 1300px;
   }
   .tickers .ticker-container .ticker-element {
-    font-size: 4.8rem;
+    font-size: 4rem;
   }
   .team {
     .team-avatar {
-      width: 1000px;
-      height: 1000px;
+      width: 800px;
+      height: 800px;
       &::before {
         top: -8rem;
         left: -8rem;
@@ -554,7 +554,7 @@
       font-size: 5rem;
     }
     .team-bio p {
-      font-size: 3.5rem;
+      font-size: 2.7rem;
     }
   }
   .reel iframe {
