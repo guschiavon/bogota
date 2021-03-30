@@ -117,7 +117,7 @@ equipe:
   <section id="tickers" class="tickers bg-pink padding-y-md padding-x-sm">
     <div class="mobile-hide">
       {% for servico in page.servicos %}
-        <ul id="{{servico.id}}" class="ticker-container {% cycle 'r-to-l', 'l-to-r' %}">
+        <ul id="{{servico.id}}" class="ticker-container {% cycle 'r-to-l', 'l-to-r' %} en">
           {% for palavra in servico.conteudo %}
           <li class="ticker-element">{{palavra.text_html | append: '.'}}</li>
           {% endfor %}

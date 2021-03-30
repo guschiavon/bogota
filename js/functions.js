@@ -16,11 +16,11 @@ const tlOne = gsap
     },
   })
   .to('.r-to-l', {
-    x: 150,
+    x: 250,
     duration: 1,  
   })
   .to(".l-to-r", {
-    x: -150,
+    x: -250,
     duration: 1,
   },
   "<"
