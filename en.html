@@ -33,32 +33,6 @@ servicos:
       - text_html: projects
       - text_html: <strong>ideas</strong>
       - text_html: and mucho más.
-equipe:
-  - nome: Caja Guedes
-    avatar_image: /assets/images/caja1.jpg
-    alt_text: Caja Guedes Bogotá Estúdio de Animação
-    bio_text: Founder/Director
-    pizza: Quattro Formaggi
-  - nome: Denise Azzi
-    avatar_image: /assets/images/de1.jpg
-    alt_text: Denise Azzi Bogotá Estúdio de Motion Design
-    bio_text: Founder/Motion Designer
-    pizza: Margherita
-  - nome: Tiago Bahia
-    avatar_image: /assets/images/ba1.jpg
-    alt_text: Tiago Bahia Bogotá Estúdio de Animação 3D
-    bio_text: Motion Designer/3D Artist
-    pizza: Pepperoni & Onion
-  - nome: Gessica Secchi
-    avatar_image: /assets/images/ge1.jpg
-    alt_text: Gessica Secchi Bogotá Estúdio de Ilustração e Animação
-    bio_text: Motion Designer/Illustrator
-    pizza: Calabresa
-  - nome: Luiz Brito
-    avatar_image: /assets/images/lu1.jpg
-    alt_text: Luiz Brito Bogotá Estúdio de Produção e Animação
-    bio_text: Account Manager & Executive Producer
-    pizza: Chocolate
 ---
 
 <header id="header" class="header padding-x-lg padding-y-md">
@@ -169,7 +143,7 @@ equipe:
       <h2 id="team-title" class="impact text-light text-right editable">
         Team_
       </h2>
-      {% for member in page.equipe %}
+      {% for member in site.data.team %}
       <div class="team-member grid-noGutter-spaceBetween{% cycle '', '-reverse' %} padding-x-lg padding-y-sm">
         <div class="col-6_md-12-middle">
           <div class="team-avatar">
@@ -184,10 +158,10 @@ equipe:
           <div class="team-bio">
             <h3 class="team-name">{{member.nome}}</h3>
             <p>
-              {{member.bio_text}}
+              {{member.bio_text_en}}
             </p>
             <p>
-              Favorite pizza: {{member.pizza}}
+              Favorite pizza: {{member.pizza_en}}
             </p>
           </div>
         </div>

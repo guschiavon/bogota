@@ -32,33 +32,7 @@ servicos:
       - text_html: finalização.
       - text_html: projetos.
       - text_html: <strong>idéias.</strong>
-      - text_html: e mucho más.
-equipe:
-  - nome: Caja Guedes
-    avatar_image: /assets/images/caja1.jpg
-    alt_text: Caja Guedes Bogotá Estúdio de Animação
-    bio_text: Fundador e Diretor
-    pizza: Quatro Queijos
-  - nome: Denise Azzi
-    avatar_image: /assets/images/de1.jpg
-    alt_text: Denise Azzi Bogotá Estúdio de Motion Design
-    bio_text: Fundadora e Motion Designer
-    pizza: Marguerita
-  - nome: Tiago Bahia
-    avatar_image: /assets/images/ba1.jpg
-    alt_text: Tiago Bahia Bogotá Estúdio de Animação 3D
-    bio_text: Motion Designer e 3D generalista
-    pizza: Pepperoni com Cebola
-  - nome: Gessica Secchi
-    avatar_image: /assets/images/ge1.jpg
-    alt_text: Gessica Secchi Bogotá Estúdio de Ilustração e Animação
-    bio_text: Motion Designer e Ilustradora
-    pizza: Calabresa
-  - nome: Luiz Brito
-    avatar_image: /assets/images/lu1.jpg
-    alt_text: Luiz Brito Bogotá Estúdio de Produção e Animação
-    bio_text: Atendimento e Produção Executiva
-    pizza: Chocolate
+      - text_html: e mucho más.  
 ---
 
 <header id="header" class="header padding-x-lg padding-y-md">
@@ -169,7 +143,7 @@ equipe:
       <h2 id="team-title" class="impact text-light text-right editable">
         Time_
       </h2>
-      {% for member in page.equipe %}
+      {% for member in site.data.team %}
       <div class="team-member grid-noGutter-spaceBetween{% cycle '', '-reverse' %} padding-x-lg padding-y-sm">
         <div class="col-6_md-12-middle">
           <div class="team-avatar">
