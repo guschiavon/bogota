@@ -1,11 +1,15 @@
 ---
 layout: portfolios
-index: 6
+index: 12
 title: Os Cabeças
 thumb_image: /assets/images/placeholder-2.png
-video_url: 'https://player.vimeo.com/video/269213722'
+video_url: https://player.vimeo.com/video/269213722
 cliente: HBO
-agencia: 
-categorias: ["direção", "animação", "colagem"]
-description_text: 
+agencia:
+categorias:
+  - direção
+  - animação
+  - colagem
+description_text:
 ---
+
