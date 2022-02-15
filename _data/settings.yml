@@ -13,8 +13,8 @@ general:
     
 branding:
   site_title: Bogotá
-  nav_logo_image: /assets/graphics/logo-main-fill.svg
-  footer_logo_image: /assets/graphics/logo-outline-alt.svg
+  # nav_logo_image: /assets/graphics/logo-main-fill.svg
+  # footer_logo_image: /assets/graphics/logo-outline-alt.svg
   preview_image: /assets/images/preview-image.jpg
 theme_settings:
   primary_color: '#d74600'
@@ -25,7 +25,7 @@ theme_settings:
   font_family_embed_code_block: '<link rel="stylesheet" href="https://use.typekit.net/tyi7vla.css">'
   body_font_family: '"sofia-pro", sans-serif'
   heading_font_family: '"sofia-pro", sans-serif'
-  body_font_size_number: 1.1rem
+  body_font_size_number: 1.1
   line_height_number: 1.8
 # navigation:
 #   menus:
