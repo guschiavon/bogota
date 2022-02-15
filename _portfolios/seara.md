@@ -1,11 +1,17 @@
 ---
 layout: portfolios
-index: 3
+index: 9
 title: Chikenitos Supreme
 thumb_image: /assets/images/placeholder-3.png
-video_url: 'https://player.vimeo.com/video/383152919'
+video_url: https://player.vimeo.com/video/383152919
 cliente: Seara
 agencia: SunsetDDB
-categorias: ["direção","design","animação","colagem","stopmotion"]
+categorias:
+  - direção
+  - design
+  - animação
+  - colagem
+  - stopmotion
 description_text:
 ---
+
