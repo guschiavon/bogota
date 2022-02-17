@@ -1,10 +1,10 @@
 ---
 layout: portfolios
 index: 1
-title: Porto Explica
+title: Porto Explica (Melhores Momentos)
 thumb_image: /assets/images/placeholder-2.png
 video_url: https://player.vimeo.com/video/667970292
-cliente: Administração dos Portos de Paranaguá e Antonina
+cliente: APPA
 agencia: Lua
 categorias:
   - animação
