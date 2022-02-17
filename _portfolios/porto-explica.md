@@ -1,11 +1,11 @@
 ---
 layout: portfolios
 index: 1
-title: Porto Explica (Melhores Momentos)
+title: Porto Explica
 thumb_image: /assets/images/placeholder-2.png
 video_url: https://player.vimeo.com/video/667970292
 cliente: APPA
-agencia: Lua
+agencia: Agência Lua
 categorias:
   - animação
   - 2D
