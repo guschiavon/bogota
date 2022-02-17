@@ -10,5 +10,7 @@ categorias:
   - pós-produção
   - edição
   - finalização
+  - VFX
 description_text:
 ---
+
