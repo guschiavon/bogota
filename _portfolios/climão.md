@@ -1,6 +1,6 @@
 ---
 layout: portfolios
-index: 2
+index: 6
 title: Climão
 thumb_image: /assets/images/placeholder-2.png
 video_url: https://player.vimeo.com/video/667957488
