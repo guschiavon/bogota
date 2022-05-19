@@ -1,6 +1,6 @@
 ---
 layout: portfolios
-index: 2
+index: 3
 title: Bic - Tudo começa com papel e Bic
 thumb_image: /assets/images/placeholder-2.png
 video_url: https://player.vimeo.com/video/711694703
@@ -12,3 +12,4 @@ categorias:
   - finalização
 description_text:
 ---
+
