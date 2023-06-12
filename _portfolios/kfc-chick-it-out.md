@@ -8,7 +8,7 @@ cliente: KFC
 agencia: Run Zebra Run
 categorias:
   - motion
-  - 2D
+  - colagem
   - finalização
 description_text:
 ---
