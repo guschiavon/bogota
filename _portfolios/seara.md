@@ -1,6 +1,6 @@
 ---
 layout: portfolios
-index: 9
+index: 95
 title: Chikenitos Supreme
 thumb_image: /assets/images/placeholder-3.png
 video_url: https://player.vimeo.com/video/383152919
@@ -14,4 +14,3 @@ categorias:
   - stopmotion
 description_text:
 ---
-
