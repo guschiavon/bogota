@@ -7,7 +7,6 @@ video_url: https://player.vimeo.com/video/835585739
 cliente: Nissin
 agencia: Dentsu Creative Brazil
 categorias:
-  - direção
   - animação
   - 3D
   - comp
