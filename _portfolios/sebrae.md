@@ -1,6 +1,6 @@
 ---
 layout: portfolios
-index: 7
+index: 92
 title: Compre do Pequeno
 thumb_image: /assets/images/placeholder-5.png
 video_url: https://player.vimeo.com/video/460707024
@@ -18,4 +18,3 @@ categorias:
   - vfx
 description_text:
 ---
-
