@@ -6,6 +6,6 @@ thumb_image:
 video_url: https://player.vimeo.com/video/719255815
 cliente: Colgate
 agencia: WPP@CP
-categorias:
+categorias: animação, motion, finalização
 description_text:
 ---
